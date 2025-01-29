@@ -1,0 +1,52 @@
+.text {
+    color: #470063;
+}
+
+.link:hover {
+    color: #FF1D79;
+}
+
+.ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.desktopNavbar {
+    width: 100%;
+}
+
+.desktopNavbar .navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.875rem;
+    background-color: #ffffff;
+    font-size: 1.125rem;
+    width: 100%;
+    height: 4.375rem;
+    border-bottom: 0.1875rem solid #470063;
+    list-style: none;
+}
+
+.desktopNavbar .navBar .dropdown .btnbtnDropdownToggle {
+    box-shadow: 0 0 0 0;
+}
+
+.navBar .div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    position: relative;
+    top: 1.5rem
+}
+
+.imgproducto {
+    width: 100%;
+}
