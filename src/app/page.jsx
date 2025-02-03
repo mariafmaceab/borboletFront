@@ -7,13 +7,13 @@ import BuySectionComponent from "@/components/sections/main/buys/BuySectionCompo
 
 export default function Home() {
   return (
-    <>
+    <main>
     <PrincipalSectionComponent/>
     <CollectionSectionComponent/>
     <PicturesSectionComponent/>
     <SliderSectionComponent/>
     <ReviewsSectionComponent/>
     <BuySectionComponent/>
-    </>
+    </main>
   );
 }

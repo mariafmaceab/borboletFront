@@ -1,0 +1,40 @@
+.sectionSlider {
+    background-color: #470063;
+    font-family: "Poppins", sans-serif;
+    padding: 1.25rem;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .sectionSlider .slideTrack {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    animation: 20s slide infinite linear;
+    width: 2848px;
+  }
+  .sectionSlider .slideTrack .slide {
+    display: flex;
+    flex-direction: row;
+  }
+  .sectionSlider .slideTrack .slide .containerSlide {
+    display: flex;
+    flex-direction: row;
+  }
+  .sectionSlider .slideTrack .slide .containerSlide .textoSlide {
+    color: aliceblue;
+    font-size: 1.875rem;
+    align-self: center;
+    margin: 10px 50px 10px 25px;
+  }
+  .sectionSlider .slideTrack .slide .containerSlide .imgSlide {
+    width: 100%;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-1424px);
+    }
+  }

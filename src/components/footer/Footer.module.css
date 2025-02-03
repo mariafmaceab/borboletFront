@@ -1,0 +1,44 @@
+.sectionFooter {
+    background-color: #EAE8FF;
+    font-family: "Poppins", sans-serif;
+  }
+  .sectionFooter .articleFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .sectionFooter .articleFooter .divcontactoFooter {
+    padding: 5px;
+  }
+  .sectionFooter .articleFooter .divcontactoFooter .imgLogoFooter {
+    padding-bottom: 0.9375rem;
+    padding-top: 15px;
+  }
+  .sectionFooter .articleFooter .divcontactoFooter .imgFooter {
+    padding-right: 0.9375rem;
+  }
+  .sectionFooter .articleFooter .menuFooter .linkList {
+    list-style-type: none;
+  }
+  .sectionFooter .articleFooter .menuFooter .linkList .list {
+    display: block;
+  }
+  .sectionFooter .articleFooter .menuFooter .linkList .link {
+    text-decoration: none;
+    color: #212529;
+  }
+  .sectionFooter .articleFooter .menuFooter .linkList .link:hover {
+    color: #470063;
+  }
+  .sectionFooter .articleFooter .subtitulo {
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+  }
+  .sectionFooter .articleCopy {
+    text-align: center;
+    padding: 40px;
+    font-family: "Poppins", sans-serif;
+  }
