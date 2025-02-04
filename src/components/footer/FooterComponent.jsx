@@ -46,7 +46,7 @@ const FooterComponent = () => {
         </article>    
         <article className={style.articleCopy}>
             <img src="./CopyRight.svg" alt="Logo Copyright"/>
-            <a>Copyright 2024 Desing by Macea</a>
+            <a> Copyright 2024 Desing by Macea</a>
         </article>
         </section>
     </footer>

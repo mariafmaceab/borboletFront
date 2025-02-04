@@ -1,0 +1,115 @@
+.presentacionBorbolet {
+    background-color: #EAE8FF;
+    font-family: "Poppins", sans-serif;
+  }
+  .presentacionBorbolet .frase {
+    width: 100%;
+  }
+  .presentacionBorbolet .articlePresentacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding: 0px 20px 0px 20px;
+  }
+  .presentacionBorbolet .articlePresentacion .imgCreadora {
+    width: 260px;
+    border-radius: 50px;
+  }
+  .presentacionBorbolet .articlePresentacion .txtCreadora {
+    font-size: 1.875rem;
+    color: #470063;
+    margin-bottom: 50px;
+  }
+  .presentacionBorbolet .articlePresentacion .divCreadora .flechas {
+    text-align: right;
+    margin-right: 50px;
+  }
+  .presentacionBorbolet .articleHistoria {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-top: 80px;
+  }
+  .presentacionBorbolet .articleHistoria .imgIndigenas {
+    width: 260px;
+    border-radius: 50px;
+  }
+  .presentacionBorbolet .articleHistoria .txtCreadora {
+    font-size: 1.875rem;
+    color: #FF1D79;
+    margin-bottom: 50px;
+  }
+  .presentacionBorbolet .articleHistoria .flechas .imgFlecha {
+    transform: scaleX(-1);
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+  .presentacionBorbolet .articleResultado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding: 0px 80px 0px 80px;
+  }
+  .presentacionBorbolet .articleResultado .imgModelos {
+    width: 260px;
+    border-radius: 50px;
+  }
+  .presentacionBorbolet .articleResultado .txtCreadora {
+    font-size: 1.875rem;
+    color: #470063;
+    margin-bottom: 50px;
+  }
+  .presentacionBorbolet .presentacionMensaje {
+    background: rgb(71, 0, 99);
+    background: linear-gradient(0deg, rgb(71, 0, 99) 0%, rgb(234, 232, 255) 100%);
+    margin-top: 100px;
+    padding: 40px;
+  }
+  .presentacionBorbolet .presentacionMensaje .imgpresentacionMensaje {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+  }
+  .presentacionBorbolet .presentacionMensaje .divPresentacionArete .aretePresentacion {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  .presentacionBorbolet .presentacionMensaje .pMensaje {
+    font-size: 3rem;
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+  }
+  .presentacionBorbolet .presentacionMensaje .divbtnComprar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .presentacionBorbolet .presentacionMensaje .divbtnComprar .btnComprar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 2.875rem;
+    font-size: 1.125rem;
+    background-color: #FF1D79;
+    color: white;
+    padding: 18px;
+    border-radius: 1.25rem;
+    border: 0.125rem solid #FF1D79;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #555555;
+  }
