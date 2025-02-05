@@ -49,8 +49,6 @@ const NavBar = () => {
                                 </MenuContent>
                             </MenuRoot>
                             <ul className={`${style.dropdownMenu} ${style.ul}`} aria-labelledby="dropdownMenu2">
-                            <li></li>
-                            <li></li>
                             </ul>
                         </div>
                         <li className={`${style.contacto} ${style.text}`}> <Link href="/processes">Proceso creativo</Link> </li>
