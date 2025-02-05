@@ -1,5 +1,6 @@
 import React from "react"
 import style from "./Footer.module.css"
+import Link from 'next/link'
 
 const FooterComponent = () => {
   return (
@@ -24,12 +25,12 @@ const FooterComponent = () => {
                 <article className={style.menuFooter}>
                     <ul className={style.linkList}>
                         <p className={style.subtitulo}>Menú</p>
-                        <li className={`${style.list} ${style.inicio}`}><a className="link" href="#">Inicio</a></li>
-                        <li className={`${style.list} ${style.aretes}`}><a className="link" href="./earrings">Aretes</a></li>
-                        <li className={`${style.list} ${style.collares}`}><a className="link" href="./necklaces">Collares</a></li>
-                        <li className={`${style.list} ${style.procesos}`}><a className="link" href="./processes">Proceso creativo</a></li>
-                        <li className={`${style.list} ${style.presentacion}`}><a className="link" href="./introduction">¿Quiénes somos?</a></li>
-                        <li className={`${style.list} ${style.contacto}`}><a className="link" href="./contact">Contáctanos</a></li>
+                        <li className={`${style.list} ${style.inicio}`}><Link className="link" href="#">Inicio</Link></li>
+                        <li className={`${style.list} ${style.aretes}`}><Link className="link" href="/earrings">Aretes</Link></li>
+                        <li className={`${style.list} ${style.collares}`}><Link className="link" href="/necklaces">Collares</Link></li>
+                        <li className={`${style.list} ${style.procesos}`}><Link className="link" href="/processes">Proceso creativo</Link></li>
+                        <li className={`${style.list} ${style.presentacion}`}><Link className="link" href="/introduction">¿Quiénes somos?</Link></li>
+                        <li className={`${style.list} ${style.contacto}`}><Link className="link" href="/contact">Contáctanos</Link></li>
                     </ul>
                 </article>
                 <article>

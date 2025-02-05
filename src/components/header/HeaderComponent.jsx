@@ -1,6 +1,24 @@
+"use client"
 import React from 'react'
 import style from './Header.module.css'
 import Link from 'next/link'
+import {
+    MenuContent,
+    MenuItem,
+    MenuRoot,
+    MenuTrigger,
+} from "@/components/ui/menu"
+import { Button, DrawerContext } from "@chakra-ui/react"
+import {
+  DrawerBackdrop,
+  DrawerBody,
+  DrawerCloseTrigger,
+  DrawerContent,
+  DrawerHeader,
+  DrawerRoot,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer"
 
 const NavBar = () => {
     return (
@@ -9,12 +27,30 @@ const NavBar = () => {
                 <ul className={`${style.navBar} ${style.ul}`}>
                     <div className={`${style.coleccionContainer} ${style.div}`}>
                         <div className={`${style.dropdown} ${style.div}`}>
-                            <button className={style.btnDropdownToggle} type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <Link className={style.text} href="#"> Colección </Link>
-                            </button>
+                            <MenuRoot>
+                                <MenuTrigger asChild>
+                                    <Button variant="outline" size="sm">
+                                        Colección
+                                    </Button>
+                                </MenuTrigger>
+                                <MenuContent>
+                                    <MenuItem asChild value="earrings">
+                                        <Link className={`${style.aretes} ${style.text}`} href="/earrings">
+                                            <img src='/LogoAretes.svg' alt="Logo de unos aretes"/>
+                                            <p>Aretes</p>
+                                        </Link>
+                                    </MenuItem>
+                                    <MenuItem asChild value="necklaces">
+                                        <Link className={`${style.collares} ${style.text}`} href="/necklaces">
+                                            <img src="/LogoCollar.svg" alt="Logo de un collar"/>
+                                            <p>Collares</p>
+                                        </Link>
+                                    </MenuItem>
+                                </MenuContent>
+                            </MenuRoot>
                             <ul className={`${style.dropdownMenu} ${style.ul}`} aria-labelledby="dropdownMenu2">
-                            <li><img src='/LogoAretes.svg' alt="Logo de unos aretes"/><Link className={`${style.aretes} ${style.text}`} href="/earrings">Aretes</Link></li>
-                            <li><img src="/LogoCollar.svg" alt="Logo de un collar"/><Link className={`${style.collares} ${style.text}`} href="/necklaces">Collares</Link></li>
+                            <li></li>
+                            <li></li>
                             </ul>
                         </div>
                         <li className={`${style.contacto} ${style.text}`}> <Link href="/processes">Proceso creativo</Link> </li>
@@ -27,7 +63,32 @@ const NavBar = () => {
                     <div className={style.div}>
                         <li className={`${style.presentacion} ${style.text}`}> <Link href="/introduction">¿Quiénes somos?</Link> </li>
                         <li className={`${style.contacto} ${style.text}`}> <Link href="/contact">Contáctanos</Link> </li>
-                        <li className={style.cesta}> <Link href=""><img src="/Cesta.svg" alt="CarritoDeCompras"/></Link></li>
+                        <DrawerRoot size={"md"}>
+                            <DrawerBackdrop />
+                            <DrawerTrigger asChild>
+                                <Button variant="outline" size="md">
+                                    <img src="/Cesta.svg" alt="CarritoDeCompras"/>
+                                </Button>
+                            </DrawerTrigger>
+                            <DrawerContent>
+                                <DrawerHeader>
+                                    <DrawerTitle>
+                                        Carrito de compras
+                                    </DrawerTitle>
+                                </DrawerHeader>
+                                <DrawerContext>
+                                    {(store) => (
+                                        <DrawerBody>
+                                            <p>
+                                                Por el momento tu carrito de compras está vacío
+                                            </p>
+                                            <img src="./carro-vacio.png" alt="Carrito de compras vacío" />
+                                        </DrawerBody>
+                                    )}
+                                </DrawerContext>
+                                <DrawerCloseTrigger />
+                            </DrawerContent>
+                        </DrawerRoot>
                     </div>
                 </ul>
             </nav>
