@@ -29,21 +29,21 @@ const NavBar = () => {
                         <div className={`${style.dropdown} ${style.div}`}>
                             <MenuRoot>
                                 <MenuTrigger asChild>
-                                    <Button variant="outline" size="sm">
+                                    <Button className={style.buttonNav} variant="outline" size="sm">
                                         Colección
                                     </Button>
                                 </MenuTrigger>
                                 <MenuContent>
-                                    <MenuItem asChild value="earrings">
+                                    <MenuItem className={style.desplegableNav} asChild value="earrings">
                                         <Link className={`${style.aretes} ${style.text}`} href="/earrings">
                                             <img src='/LogoAretes.svg' alt="Logo de unos aretes"/>
-                                            <p>Aretes</p>
+                                            <p className={style.desplegableText} >Aretes</p>
                                         </Link>
                                     </MenuItem>
-                                    <MenuItem asChild value="necklaces">
+                                    <MenuItem className={style.desplegableNav} asChild value="necklaces">
                                         <Link className={`${style.collares} ${style.text}`} href="/necklaces">
                                             <img src="/LogoCollar.svg" alt="Logo de un collar"/>
-                                            <p>Collares</p>
+                                            <p className={style.desplegableText}>Collares</p>
                                         </Link>
                                     </MenuItem>
                                 </MenuContent>
@@ -64,23 +64,25 @@ const NavBar = () => {
                         <DrawerRoot size={"md"}>
                             <DrawerBackdrop />
                             <DrawerTrigger asChild>
-                                <Button variant="outline" size="md">
+                                <Button className={style.buttonCar} variant="outline" size="md">
                                     <img src="/Cesta.svg" alt="CarritoDeCompras"/>
                                 </Button>
                             </DrawerTrigger>
-                            <DrawerContent>
+                            <DrawerContent className={style.drawerCar}>
                                 <DrawerHeader>
-                                    <DrawerTitle>
+                                    <DrawerTitle className={style.titleCar}>
                                         Carrito de compras
                                     </DrawerTitle>
                                 </DrawerHeader>
                                 <DrawerContext>
                                     {(store) => (
                                         <DrawerBody>
-                                            <p>
+                                            <p className={style.textCar}>
                                                 Por el momento tu carrito de compras está vacío
                                             </p>
-                                            <img src="./carro-vacio.png" alt="Carrito de compras vacío" />
+                                            <div className={style.divImg}>
+                                                <img src="./carro-vacio.png" alt="Carrito de compras vacío" />
+                                            </div>
                                         </DrawerBody>
                                     )}
                                 </DrawerContext>

@@ -14,9 +14,17 @@
     flex-wrap: wrap;
     padding: 0px 20px 0px 20px;
   }
-  .presentacionBorbolet .articlePresentacion .imgCreadora {
-    width: 260px;
-    border-radius: 50px;
+
+  .divImg{
+    border-radius: .625rem;
+    width: 350px;
+    height: 450px;
+    overflow: hidden;
+  }
+  .imgCreadora {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .presentacionBorbolet .articlePresentacion .txtCreadora {
     font-size: 1.875rem;
@@ -37,9 +45,10 @@
     padding: 20px;
     padding-top: 80px;
   }
-  .presentacionBorbolet .articleHistoria .imgIndigenas {
-    width: 260px;
-    border-radius: 50px;
+  .imgIndigenas {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .presentacionBorbolet .articleHistoria .txtCreadora {
     font-size: 1.875rem;
@@ -60,9 +69,10 @@
     flex-wrap: wrap;
     padding: 0px 80px 0px 80px;
   }
-  .presentacionBorbolet .articleResultado .imgModelos {
-    width: 260px;
-    border-radius: 50px;
+  .imgModelos {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .presentacionBorbolet .articleResultado .txtCreadora {
     font-size: 1.875rem;
@@ -82,11 +92,19 @@
     align-items: center;
     gap: 70px;
   }
-  .presentacionBorbolet .presentacionMensaje .divPresentacionArete .aretePresentacion {
+  .divPresentacionArete{
     border-radius: 50%;
     width: 200px;
     height: 200px;
+    overflow: hidden;
   }
+
+  .aretePresentacion{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .presentacionBorbolet .presentacionMensaje .pMensaje {
     font-size: 3rem;
     text-align: center;

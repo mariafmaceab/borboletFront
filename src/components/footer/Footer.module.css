@@ -7,15 +7,17 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
-    gap: 10px;
+    gap: .625rem;
     flex-wrap: wrap;
   }
-  .sectionFooter .articleFooter .divcontactoFooter {
-    padding: 5px;
+  .divcontactoFooter {
+    padding: .3125rem;
+    display: flex;
+    flex-direction: row;
   }
   .sectionFooter .articleFooter .divcontactoFooter .imgLogoFooter {
     padding-bottom: 0.9375rem;
-    padding-top: 15px;
+    padding-top: .9375rem;
   }
   .sectionFooter .articleFooter .divcontactoFooter .imgFooter {
     padding-right: 0.9375rem;
@@ -36,7 +38,13 @@
   .sectionFooter .articleFooter .subtitulo {
     font-weight: 600;
   }
-  .sectionFooter .articleCopy {
+  .redes{
+    display: flex;
+    flex-direction: row;
+  }
+  .articleCopy {
+    display: flex;
     text-align: center;
-    padding: 40px;
+    justify-content: center;
+    padding: 2.5rem;
   }

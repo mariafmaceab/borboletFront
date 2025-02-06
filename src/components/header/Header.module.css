@@ -1,8 +1,9 @@
 .text {
     color: #470063;
+    font-weight: 500;
 }
 
-.link:hover {
+.text:hover {
     color: #FF1D79;
 }
 
@@ -30,8 +31,59 @@
     list-style: none;
 }
 
-.desktopNavbar .navBar .dropdown .btnbtnDropdownToggle {
-    box-shadow: 0 0 0 0;
+.dropdown{
+    border: 0;
+}
+
+.buttonNav{
+    border: 0;
+    font-size: 1.125rem;
+    color: #470063;
+    width: 7.5rem;
+}
+
+.buttonNav:focus-visible{
+    border: none;
+    outline: none;
+}
+
+.buttonNav:hover{
+    color: #FF1D79;
+    background-color: transparent;
+}
+
+.desplegableNav{
+    margin: 1.25rem;
+    font-size: 1.125rem;
+    margin-right: 2.5rem;
+}
+
+.desplegableText{
+    margin-left: 20px;
+}
+
+.buttonCar{
+    border: 0;
+}
+
+.drawerCar{
+    padding: 1.25rem;
+    font-size: 1.125rem;
+    background-color: #EAE8FF
+}
+.titleCar{
+    font-size: 1.375rem;
+    padding-bottom: .9375rem;
+    border-bottom: .0625rem solid #470063;
+    color:#470063;
+}
+.textCar{
+    padding-top: .9375rem;
+}
+.divImg{
+    padding-top: .9375rem;
+    width: 6.25rem;
+    height: 6.25rem;
 }
 
 .navBar .div {
@@ -39,7 +91,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 1.875rem;
 }
 
 .logo {

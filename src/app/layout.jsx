@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Borbolet",
+  title: "Borbolet | Accesorios en mostacilla",
   description: "",
 };
 

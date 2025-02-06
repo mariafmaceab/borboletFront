@@ -6,7 +6,7 @@ const IntroductionPage = () => {
     <section className={style.presentacionBorbolet}>
             <img className={style.frase} src="./Eslogan.webp"/>
             <article className={style.articlePresentacion}>
-                <div>
+                <div className={style.divImg}>
                     <img className={style.imgCreadora} src="./fotoPrincipal.jpg"/>
                 </div>
                 <div className={style.divCreadora}>
@@ -31,13 +31,13 @@ const IntroductionPage = () => {
                             <img className={style.imgFlecha} src="./FlechaAbajo.webp"/>
                         </div>
                 </div>
-                <div>
+                <div className={style.divImg}>
                     <img className={style.imgIndigenas} src="../fotoPrincipal.jpg"/>
                 </div>
             </article>
 
             <article className={style.articleResultado}>
-                <div>
+                <div className={style.divImg}>
                     <img className={style.imgModelos} src="./fotoPrincipal.jpg"/>
                 </div>
                 <div className={style.divCreadora}>
@@ -48,6 +48,7 @@ const IntroductionPage = () => {
             </article>
             <article className={style.presentacionMensaje}>
                 <article className={style.imgpresentacionMensaje}>
+
                     <div className={style.divPresentacionArete}>
                         <img className={style.aretePresentacion} src="./fotoPrincipal.jpg"/>
                     </div>
@@ -57,6 +58,7 @@ const IntroductionPage = () => {
                     <div className={style.divPresentacionArete}>
                         <img className={style.aretePresentacion} src="./fotoPrincipal.jpg"/>
                     </div>
+
                 </article>
                     <p className={style.pMensaje}>Estas piezas ofrecen más que belleza:<br />
                     cuentan historias y transmiten emociones

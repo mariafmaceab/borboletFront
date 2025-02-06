@@ -40,9 +40,11 @@ const FooterComponent = () => {
                 </article>
                 <article>
                     <p className={style.subtitulo}>Siguenos</p>
-                    <img src="./Instagram.svg" alt="Logo de Instagram"/>
-                    <img src="./TikTok.svg" alt="Logo Tik tok"/>
-                    <img src="./Facebook.svg" alt="Logo Facebook"/>
+                    <div className={style.redes}>
+                        <img src="./Instagram.svg" alt="Logo de Instagram"/>
+                        <img src="./TikTok.svg" alt="Logo Tik tok"/>
+                        <img src="./Facebook.svg" alt="Logo Facebook"/>
+                    </div>
                 </article>
         </article>    
         <article className={style.articleCopy}>
