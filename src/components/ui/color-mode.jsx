@@ -4,11 +4,11 @@ import { ClientOnly, IconButton, Skeleton } from '@chakra-ui/react'
 import { ThemeProvider, useTheme } from 'next-themes'
 
 import * as React from 'react'
-import { LuMoon, LuSun } from 'react-icons/lu'
+import { LuSun } from 'react-icons/lu'
 
 export function ColorModeProvider(props) {
   return (
-    <ThemeProvider attribute='class' disableTransitionOnChange {...props} />
+    <ThemeProvider enableSystem={false} attribute='class' disableTransitionOnChange {...props} />
   )
 }
 

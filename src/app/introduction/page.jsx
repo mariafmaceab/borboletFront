@@ -7,7 +7,7 @@ const IntroductionPage = () => {
             <img className={style.frase} src="./Eslogan.webp"/>
             <article className={style.articlePresentacion}>
                 <div className={style.divImg}>
-                    <img className={style.imgCreadora} src="./fotoPrincipal.jpg"/>
+                    <img className={style.imgCreadora} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/fotoYolima0.jpg"/>
                 </div>
                 <div className={style.divCreadora}>
                     <p className={style.txtCreadora}>Soy Yolima, creadora de Borbolet.<br />
@@ -32,7 +32,7 @@ const IntroductionPage = () => {
                         </div>
                 </div>
                 <div className={style.divImg}>
-                    <img className={style.imgIndigenas} src="../fotoPrincipal.jpg"/>
+                    <img className={style.imgIndigenas} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/retratoIndigena.png"/>
                 </div>
             </article>
 
@@ -50,13 +50,13 @@ const IntroductionPage = () => {
                 <article className={style.imgpresentacionMensaje}>
 
                     <div className={style.divPresentacionArete}>
-                        <img className={style.aretePresentacion} src="./fotoPrincipal.jpg"/>
+                        <img className={style.aretePresentacion} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/earrings%20(1).png"/>
                     </div>
                     <div className={style.divPresentacionArete}>
-                        <img className={style.aretePresentacion} src="./fotoPrincipal.jpg"/>
+                        <img className={style.aretePresentacion} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/necklace.png"/>
                     </div>
                     <div className={style.divPresentacionArete}>
-                        <img className={style.aretePresentacion} src="./fotoPrincipal.jpg"/>
+                        <img className={style.aretePresentacion} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/gemstone.png"/>
                     </div>
 
                 </article>
