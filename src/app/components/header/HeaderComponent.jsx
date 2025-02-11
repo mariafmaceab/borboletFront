@@ -7,7 +7,7 @@ import {
     MenuItem,
     MenuRoot,
     MenuTrigger,
-} from "@/components/ui/menu"
+} from "@/app/components/ui/menu"
 import { Button, DrawerContext } from "@chakra-ui/react"
 import {
   DrawerBackdrop,
@@ -18,7 +18,7 @@ import {
   DrawerRoot,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer"
+} from "@/app/components/ui/drawer"
 
 const NavBar = () => {
     return (

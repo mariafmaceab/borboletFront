@@ -1,0 +1,57 @@
+.card{
+    background-color: #ffffff;
+    height: 23.125rem;
+    text-align: center;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    padding: .375rem;
+}
+.cardImg{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 20.625rem;
+    height: 17.5rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+.imgproducto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tituloProducto{
+    display:flex;
+    color:#FF1D79;
+    font-size: 1.375rem;
+    align-items: left;
+    justify-content: left;
+}
+.cardDescripcion{
+    display:flex;
+    justify-content: space-between;
+    padding: .625rem;
+    height: 50px;
+}
+.precioProducto{
+    display:flex;
+    justify-content: flex-start;
+    padding-left: .625rem;
+}
+.cestaCard{
+    background-color: #FF1D79;
+    width: 2.0625rem;
+    height: 2.0625rem;
+    border-radius: 30px;
+    border:0rem;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.imgCestaCard{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;;
+}

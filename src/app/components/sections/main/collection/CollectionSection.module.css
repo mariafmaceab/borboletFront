@@ -1,0 +1,49 @@
+.sectionCollection{
+    background-color: #EAE8FF;
+    padding: 1.25rem;
+}
+.titleCollection{
+    color: #470063;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1.25rem;
+}
+.divEarrings{
+    display: flex;
+}
+.divEarrings{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.875rem;
+}
+.category{
+    color: #470063;
+    font-size: 1.875rem;
+    writing-mode: vertical-lr;
+    transform: rotateZ(180deg);
+    text-align: center;
+}
+.vermas{
+  display: flex;
+  width: 9.3125rem;
+  height: 2.875rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125rem;
+  background-color: #FF1D79;
+  color: white;
+  padding: 18px;
+  border-radius: 1.25rem;
+  box-shadow: 0.25rem 0.25rem 0.25rem #555555;
+  border: 0.125rem solid #FF1D79;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+.divButton{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2.1875rem;
+    margin-right: 6.25rem;
+    margin-bottom: 6.25rem;
+}

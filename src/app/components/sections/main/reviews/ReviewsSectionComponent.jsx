@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './ReviewsSection.module.css'
-import ReviewsComponent from '@/components/cards/ReviewsComponent'
+import ReviewsComponent from '@/app/components/cards/reviews/ReviewsComponent'
 
 const ReviewsSectionComponent = () => {
     return (

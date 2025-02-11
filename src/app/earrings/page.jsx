@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderComponent from '@/components/header/HeaderComponent'
+import HeaderComponent from '@/app/components/header/HeaderComponent'
 
 const Earrings = () => {
   return (
