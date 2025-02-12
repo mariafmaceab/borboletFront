@@ -10,10 +10,18 @@
 }
 .divEarrings{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.875rem;
+    align-items: center;
 }
-.divEarrings{
+.divEarringsTxt{
+    align-items: center;
+}
+.divEarringsCards{
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
     justify-content: center;
     gap: 1.875rem;
 }
@@ -46,4 +54,20 @@
     padding: 2.1875rem;
     margin-right: 6.25rem;
     margin-bottom: 6.25rem;
+}
+.containBanner{
+    display: flex;
+    justify-content: center;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    background-color: #470063;
+    width: 14.5625rem;
+    height: 2.0625rem;
+    color: #ffffff;
+    font-style: italic;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.25rem 1.25rem 0rem 0rem;
 }

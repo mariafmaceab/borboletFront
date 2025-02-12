@@ -15,20 +15,26 @@ const SectionColeccion = async() => {
             <p className={style.titleCollection}>Nuestra colección</p>
             <article className={style.earrings}>
                 <div className={style.divEarrings}>
-                    <h2 className={style.category}>Aretes con mostacilla</h2>
-                    {
-                        earrings.map((earring, index) => {
-                            if(index === 1){
-                                return (
-                                    <div>
-                                        <p>Las más vendidas</p>
-                                        <ProductCardComponent product={earring}/>
-                                    </div>
-                                )
-                            }
-                            return <ProductCardComponent product={earring}/>
-                        })
-                    }
+                    <div className={style.divEarringsTxt}>
+                        <h2 className={style.category}>Aretes con mostacilla</h2>
+                    </div>
+                    <div className={style.divEarringsCards}>
+                        {
+                            earrings.map((earring, index) => {
+                                if(index === 1){
+                                    return (
+                                        <div>
+                                            <div className={style.containBanner}>
+                                                <p className={style.banner}>Las más vendidas</p>
+                                            </div>
+                                            <ProductCardComponent product={earring}/>
+                                        </div>
+                                    )
+                                }
+                                return <ProductCardComponent product={earring}/>
+                            })
+                        }
+                    </div>
                 </div>
                 <div className={style.divButton}>
                     <button className={style.vermas}>Ver más</button>
@@ -37,20 +43,26 @@ const SectionColeccion = async() => {
 
             <article className={style.earrings}>
                 <div className={style.divEarrings}>
-                    <h2 className={style.category}>Collares</h2>
-                    {
-                        necklaces.map((necklace, index) => {
-                            if(index === 1){
-                                return (
-                                    <div>
-                                        <p>Último lanzamiento</p>
-                                        <ProductCardComponent product={necklace}/>
-                                    </div>
-                                )
-                            }
-                            return <ProductCardComponent product={necklace}/>
-                        })
-                    }
+                    <div className={style.divEarringsTxt}>
+                        <h2 className={style.category}>Collares</h2>
+                    </div>
+                    <div className={style.divEarringsCards}>
+                        {
+                            necklaces.map((necklace, index) => {
+                                if(index === 1){
+                                    return (
+                                        <div>
+                                            <div className={style.containBanner}>
+                                                <p className={style.banner}>Último lanzamiento</p>
+                                            </div>
+                                            <ProductCardComponent product={necklace}/>
+                                        </div>
+                                    )
+                                }
+                                return <ProductCardComponent product={necklace}/>
+                            })
+                        }
+                    </div>
                 </div>
                 <div className={style.divButton}>
                     <button className={style.vermas}>Ver más</button>
