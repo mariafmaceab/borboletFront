@@ -36,27 +36,24 @@ const Earrings = () => {
     }
 
       return (
-            <section className={style.sectionColeccion}>
-                <article className={style.tituloAretes}>
+            <section className={style.sectionCollection}>
+                <article className={style.titleEarrings}>
                     <h2>Aretes</h2>
                 </article>
                 <article className={style.filtersSection}>
                     <p>Filtrar:</p>
                     <div className={style.dropdown}>
                         <label htmlFor="precio">Precio: </label>
-                        <select name="price" id="price" defaultValue="relevant" onChange={(e) => handleOrder(e)}>
+                        <select className={style.container} name="price" id="price" defaultValue="relevant" onChange={(e) => handleOrder(e)}>
                             <option value="relevant">Más relevantes</option>
                             <option value="ltg">De menor a mayor</option>
                             <option value="gtl">De mayor a menor</option>
                         </select>
                     </div>
-                    <div className={style.dropdown}>
-                        <label>Material</label>
-                    </div>
                 </article>
 
                 <section className={style.productsSection}>
-                    <div className={style.productos}>
+                    <div className={style.products}>
                         {
                             earrings.map(earring => <ProductCardComponent key={earring.id} product={earring}/>)
                         }
