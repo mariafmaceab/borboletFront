@@ -4,7 +4,7 @@ import style from './style.module.css'
 const IntroductionPage = () => {
   return (
     <section className={style.presentacionBorbolet}>
-            <img className={style.frase} src="./Eslogan.webp"/>
+            <img className={style.frase} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/eslogan.png"/>
             <article className={style.articlePresentacion}>
                 <div className={style.divImg}>
                     <img className={style.imgCreadora} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/fotoYolima0.jpg"/>
@@ -38,7 +38,7 @@ const IntroductionPage = () => {
 
             <article className={style.articleResultado}>
                 <div className={style.divImg}>
-                    <img className={style.imgModelos} src="./fotoPrincipal.jpg"/>
+                    <img className={style.imgModelos} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/fotoModelos0.jpg"/>
                 </div>
                 <div className={style.divCreadora}>
                     <p className={style.txtCreadora}>Crear este tipo de accesorios me permite<br />

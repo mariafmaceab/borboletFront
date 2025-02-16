@@ -35,13 +35,13 @@ const NavBar = () => {
                                 </MenuTrigger>
                                 <MenuContent>
                                     <MenuItem className={style.desplegableNav} asChild value="earrings">
-                                        <Link className={`${style.aretes} ${style.text}`} href="/earrings">
+                                        <Link className={`${style.aretes} ${style.text}`} href="/products/earrings">
                                             <img src='/LogoAretes.svg' alt="Logo de unos aretes"/>
                                             <p className={style.desplegableText} >Aretes</p>
                                         </Link>
                                     </MenuItem>
                                     <MenuItem className={style.desplegableNav} asChild value="necklaces">
-                                        <Link className={`${style.collares} ${style.text}`} href="/necklaces">
+                                        <Link className={`${style.collares} ${style.text}`} href="/products/necklaces">
                                             <img src="/LogoCollar.svg" alt="Logo de un collar"/>
                                             <p className={style.desplegableText}>Collares</p>
                                         </Link>

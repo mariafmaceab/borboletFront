@@ -6,7 +6,8 @@
     color: #470063;
     font-size: 3rem;
     text-align: center;
-    padding: 1.25rem;
+    padding: 3.125rem;
+    margin-bottom: 1.25rem;
 }
 .divEarrings{
     display: flex;

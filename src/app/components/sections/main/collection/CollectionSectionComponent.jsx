@@ -5,7 +5,7 @@ import supabase from '@/app/database/supabase'
 
 const SectionColeccion = async() => {
 
-    const { data, error } = await supabase.from('products').select()
+    const { data, error } = await supabase.from('products').select().order("id")
 
     const earrings = data.filter(product => product.category === "earrings").slice(0, 3)
     const necklaces = data.filter(product => product.category === "necklace").slice(0, 3)
@@ -27,11 +27,11 @@ const SectionColeccion = async() => {
                                             <div className={style.containBanner}>
                                                 <p className={style.banner}>Las más vendidas</p>
                                             </div>
-                                            <ProductCardComponent product={earring}/>
+                                            <ProductCardComponent product={earring} key={earring.id}/>
                                         </div>
                                     )
                                 }
-                                return <ProductCardComponent product={earring}/>
+                                return <ProductCardComponent product={earring} key={earring.id}/>
                             })
                         }
                     </div>
@@ -55,11 +55,11 @@ const SectionColeccion = async() => {
                                             <div className={style.containBanner}>
                                                 <p className={style.banner}>Último lanzamiento</p>
                                             </div>
-                                            <ProductCardComponent product={necklace}/>
+                                            <ProductCardComponent product={necklace} key={necklace.id}/>
                                         </div>
                                     )
                                 }
-                                return <ProductCardComponent product={necklace}/>
+                                return <ProductCardComponent product={necklace} key={necklace.id}/>
                             })
                         }
                     </div>

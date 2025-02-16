@@ -26,7 +26,7 @@ const ProcessesPage = () => {
                las mostacillas hasta dar vida al diseño con presición y detalle
             </p>
             <div className={style.videoYoutube}>
-            <iframe width="365" height="727" src="https://www.youtube.com/embed/Bcxgm_-hkmo" title="Mariposa blanco y dorado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="365" height="727" src="https://www.youtube.com/embed/Bcxgm_-hkmo" title="Mariposa blanco y dorado" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
             <p className={`${style.txtProcesos} ${style.txt1}`}>Es un arte que requiere de paciencia, dedicación y especialmente de pasión</p>
             <div className={style.divbtnComprar}>

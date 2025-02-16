@@ -42,13 +42,15 @@
   }
   .sectionProcesos .txt1 {
     font-size: 1.875rem;
-    margin: 20px;
+    margin: 3.125rem;
+    margin-top: 4.375rem;
     font-style: italic;
   }
   .sectionProcesos .divbtnComprar {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 1.875rem;
   }
   .sectionProcesos .divbtnComprar .btnComprar {
     display: flex;
