@@ -1,13 +1,14 @@
 import React from 'react'
 import style from './style.module.css'
+import Image from 'next/image'
 
 const IntroductionPage = () => {
   return (
     <section className={style.presentacionBorbolet}>
-            <img className={style.frase} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/eslogan.png"/>
+            <Image className={style.frase} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/eslogan.png" alt='' width={1280} height={720}/>
             <article className={style.articlePresentacion}>
                 <div className={style.divImg}>
-                    <img className={style.imgCreadora} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/fotoYolima0.jpg"/>
+                    <Image className={style.imgCreadora} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/fotoYolima0.jpg" alt='' width={3000} height={2500}/>
                 </div>
                 <div className={style.divCreadora}>
                     <p className={style.txtCreadora}>Soy Yolima, creadora de Borbolet.<br />
@@ -32,13 +33,13 @@ const IntroductionPage = () => {
                         </div>
                 </div>
                 <div className={style.divImg}>
-                    <img className={style.imgIndigenas} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/retratoIndigena.png"/>
+                    <Image className={style.imgIndigenas} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/retratoIndigena.png" alt='' width={350} height={500}/>
                 </div>
             </article>
 
             <article className={style.articleResultado}>
                 <div className={style.divImg}>
-                    <img className={style.imgModelos} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/fotoModelos0.jpg"/>
+                    <Image className={style.imgModelos} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/fotoModelos0.jpg" alt='' width={350} height={500}/>
                 </div>
                 <div className={style.divCreadora}>
                     <p className={style.txtCreadora}>Crear este tipo de accesorios me permite<br />
@@ -50,13 +51,13 @@ const IntroductionPage = () => {
                 <article className={style.imgpresentacionMensaje}>
 
                     <div className={style.divPresentacionArete}>
-                        <img className={style.aretePresentacion} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/earrings%20(1).png"/>
+                        <Image className={style.aretePresentacion} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/earrings%20(1).png" alt='' width={350} height={500}/>
                     </div>
                     <div className={style.divPresentacionArete}>
-                        <img className={style.aretePresentacion} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/necklace.png"/>
+                        <Image className={style.aretePresentacion} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/necklace.png" alt='' width={350} height={500}/>
                     </div>
                     <div className={style.divPresentacionArete}>
-                        <img className={style.aretePresentacion} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/gemstone.png"/>
+                        <Image className={style.aretePresentacion} src="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/gemstone.png" alt='' width={350} height={500}/>
                     </div>
 
                 </article>
