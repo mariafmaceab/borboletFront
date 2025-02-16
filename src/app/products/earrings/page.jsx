@@ -10,7 +10,7 @@ const Earrings = () => {
 
     useEffect(() => {
         async function fetchProducts() {
-            const {data, error} = await supabase.from('products').select().eq('category', 'earrings')
+            const {data, error} = await supabase.from('products').select().eq('category', 'earrings').order("id")
             if(error) {
                 console.log(error)
             }

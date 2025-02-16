@@ -1,0 +1,58 @@
+.pageProducts{
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+}
+.articleImgProduct{
+    width: 30.3125rem;
+    height: 33rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgProduct{
+    object-fit: cover;
+}
+.titleProduct{
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+}
+.priceProduct{
+    font-size: 1.5rem;
+}
+.bottomsProducto{
+    margin: 20px 0px 20px 0px;
+}
+.btnCantidad{
+    width: 60px;
+    height: 40px;
+    color: #470063;
+    border: 0.125rem solid #470063;
+    border-radius: 1.25rem;
+    box-shadow: 2px 2px 2px #555555;
+    background-color: rgba(15, 10, 10, 0);
+    cursor: pointer;
+    margin-right: 30px;
+}
+.btnCarrito{
+    width: 200px;
+    height: 40px;
+    background-color: #FF1D79;
+    color: white;
+    border-radius: 1.25rem;
+    box-shadow: 2px 2px 2px #555555;
+    border: 0.125rem solid #FF1D79;
+    cursor: pointer;
+}
+.precioProducto{
+    font-size: 1.125rem;
+}
+.descripcionItem{
+    list-style-type: disc;
+}

@@ -23,7 +23,7 @@ const SectionColeccion = async() => {
                             earrings.map((earring, index) => {
                                 if(index === 1){
                                     return (
-                                        <div>
+                                        <div key={earring.id + "div"}>
                                             <div className={style.containBanner}>
                                                 <p className={style.banner}>Las más vendidas</p>
                                             </div>
@@ -51,7 +51,7 @@ const SectionColeccion = async() => {
                             necklaces.map((necklace, index) => {
                                 if(index === 1){
                                     return (
-                                        <div>
+                                        <div key={necklace.id + "div"}>
                                             <div className={style.containBanner}>
                                                 <p className={style.banner}>Último lanzamiento</p>
                                             </div>
