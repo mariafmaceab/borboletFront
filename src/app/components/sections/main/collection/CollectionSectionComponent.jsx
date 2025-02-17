@@ -1,18 +1,28 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import style from './CollectionSection.module.css'
 import ProductCardComponent from '@/app/components/cards/products/ProductCardComponent'
 import supabase from '@/app/database/supabase'
+import Link from 'next/link'
 
-const SectionColeccion = async() => {
+const SectionColeccion = () => {
 
-    const { data, error } = await supabase.from('products').select().order("id")
+    const [earrings, setEarrings] = useState([])
+    const [necklaces, setNecklaces] = useState([])
 
-    const earrings = data.filter(product => product.category === "earrings").slice(0, 3)
-    const necklaces = data.filter(product => product.category === "necklace").slice(0, 3)
+    useEffect(() => {
+        const fetchData = async() => {
+            const { data, error } = await supabase.from('products').select().order("id")
+            if(error) console.log(error)
+            setEarrings(data.filter(product => product.category === "earrings").slice(0, 3))
+            setNecklaces(data.filter(product => product.category === "necklace").slice(0, 3))
+        }
+        fetchData()
+    },[])
 
     return(
         <section className={style.sectionCollection}>
-            <p className={style.titleCollection}>Nuestra colección</p>
+            <p className={style.titleCollection} id="nuestra-coleccion">Nuestra colección</p>
             <article className={style.earrings}>
                 <div className={style.divEarrings}>
                     <div className={style.divEarringsTxt}>
@@ -37,7 +47,7 @@ const SectionColeccion = async() => {
                     </div>
                 </div>
                 <div className={style.divButton}>
-                    <button className={style.vermas}>Ver más</button>
+                    <Link className={style.vermas} href={"/products/earrings"}>Ver más</Link>
                 </div>
             </article>
 
@@ -65,7 +75,7 @@ const SectionColeccion = async() => {
                     </div>
                 </div>
                 <div className={style.divButton}>
-                    <button className={style.vermas}>Ver más</button>
+                    <Link href={"/products/necklaces"} className={style.vermas}>Ver más</Link>
                 </div>
             </article>
 

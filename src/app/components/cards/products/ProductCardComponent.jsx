@@ -2,14 +2,13 @@ import React from 'react'
 import style from './ProductCard.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-
-let COP = new Intl.NumberFormat('es-CO', {
-  style: 'currency',
-  currency: 'COP',
-  maximumSignificantDigits: 1,
-});
+import { useCart } from '@/app/context/cartcontext';
+import COP from '@/app/utils/utils';
 
 const ProductCardComponent = ({product}) => {
+
+  const { addToCart } = useCart();
+  
   return (
       <article className={style.card}>
         <Link href={`/products/${product.id}`}>
@@ -18,7 +17,7 @@ const ProductCardComponent = ({product}) => {
           </div>
           <div className={style.cardDescripcion}>
               <p className={style.tituloProducto}>{product.name}</p>
-              <button className={style.cestaCard}>
+              <button className={style.cestaCard} onClick={() => addToCart(product, 1)}>
                 <p className={style.linkCesta}><img src="../CarCollection.svg" className={style.imgcestacard} alt="CarritoDeCompras"/></p>
               </button>
           </div>

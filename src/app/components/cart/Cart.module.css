@@ -1,0 +1,23 @@
+.buttonCar{
+    border: 0;
+}
+
+.drawerCar{
+    padding: 1.25rem;
+    font-size: 1.125rem;
+    background-color: #EAE8FF
+}
+.titleCar{
+    font-size: 1.375rem;
+    padding-bottom: .9375rem;
+    border-bottom: .0625rem solid #470063;
+    color:#470063;
+}
+.textCar{
+    padding-top: .9375rem;
+}
+.divImg{
+    padding-top: .9375rem;
+    width: 6.25rem;
+    height: 6.25rem;
+}

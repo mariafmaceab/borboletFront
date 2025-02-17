@@ -46,6 +46,10 @@
     box-shadow: 0.25rem 0.25rem 0.25rem #555555;
     border: 0.125rem solid #FF1D79;
     cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .sectionPrincipal .btnSecondary {
     width: 17.4375rem;

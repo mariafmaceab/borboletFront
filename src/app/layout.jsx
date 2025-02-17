@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import FooterComponent from "@/app/components/footer/FooterComponent";
 import { Provider } from "@/app/components/ui/provider"
+import { CartProvider } from "./context/cartcontext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,11 +24,13 @@ export default function RootLayout({ children }) {
   return (
     <html suppressHydrationWarning>
       <body>
-        <Provider>
-          <HeaderComponent/>
-          {children}
-          <FooterComponent/>
-        </Provider>
+        <CartProvider>
+          <Provider>
+            <HeaderComponent />
+            {children}
+            <FooterComponent />
+          </Provider>
+        </CartProvider>
       </body>
     </html>
   );

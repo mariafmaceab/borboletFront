@@ -8,17 +8,8 @@ import {
     MenuRoot,
     MenuTrigger,
 } from "@/app/components/ui/menu"
-import { Button, DrawerContext } from "@chakra-ui/react"
-import {
-  DrawerBackdrop,
-  DrawerBody,
-  DrawerCloseTrigger,
-  DrawerContent,
-  DrawerHeader,
-  DrawerRoot,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/app/components/ui/drawer"
+import { Button } from "@chakra-ui/react"
+import CartComponent from '../cart/CartComponent'
 
 const NavBar = () => {
     return (
@@ -61,34 +52,7 @@ const NavBar = () => {
                     <div className={style.div}>
                         <li className={`${style.presentacion} ${style.text}`}> <Link href="/introduction">¿Quiénes somos?</Link> </li>
                         <li className={`${style.contacto} ${style.text}`}> <Link href="/contact">Contáctanos</Link> </li>
-                        <DrawerRoot size={"md"}>
-                            <DrawerBackdrop />
-                            <DrawerTrigger asChild>
-                                <Button className={style.buttonCar} variant="outline" size="md">
-                                    <img src="/Cesta.svg" alt="CarritoDeCompras"/>
-                                </Button>
-                            </DrawerTrigger>
-                            <DrawerContent className={style.drawerCar}>
-                                <DrawerHeader>
-                                    <DrawerTitle className={style.titleCar}>
-                                        Carrito de compras
-                                    </DrawerTitle>
-                                </DrawerHeader>
-                                <DrawerContext>
-                                    {(store) => (
-                                        <DrawerBody>
-                                            <p className={style.textCar}>
-                                                Por el momento tu carrito de compras está vacío
-                                            </p>
-                                            <div className={style.divImg}>
-                                                <img src="./carro-vacio.png" alt="Carrito de compras vacío" />
-                                            </div>
-                                        </DrawerBody>
-                                    )}
-                                </DrawerContext>
-                                <DrawerCloseTrigger />
-                            </DrawerContent>
-                        </DrawerRoot>
+                        <CartComponent/>
                     </div>
                 </ul>
             </nav>
