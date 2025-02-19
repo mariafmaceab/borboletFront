@@ -21,15 +21,15 @@ const ProductDetailPage = () => {
     const urlParams = useParams()
     const productId = urlParams["id"]
     const { cart, addToCart } = useCart();
-    const [productCount, setProductCount] = useState(cart.length)
+    const [productCount, setProductCount] = useState(cart.length < 1 ? 1 : cart.length)
 
     useEffect(() => {
         async function fetchProduct() {
-            const { data, error } = await supabase.from('products').select().eq('id', productId)
+            const { data, error } = await supabase.from('products').select().eq('id', productId).single()
             if (error) {
                 console.log(error)
             }
-            setProduct(data[0])
+            setProduct(data)
         }
         fetchProduct();
     }, [])
@@ -52,7 +52,7 @@ const ProductDetailPage = () => {
     return (
         <section className={style.pageProducts}>
             <article className={style.articleImgProduct}>
-                <Image src={product?.image || "../LogoFooter.svg"} blurDataURL="https://placehold.co/485x528.WebP" alt={product?.name || "Product"} width={485} height={528} style={{ objectFit: "contain" }} priority loading="eager" />
+                <Image className={style.imgProduct} src={product?.image || "../LogoFooter.svg"} blurDataURL="https://placehold.co/485x528.WebP" alt={product?.name || "Product"} width={485} height={528} style={{ objectFit: "contain" }} priority loading="eager" />
             </article>
 
             <article className={style.articleDescripcionProducto}>
@@ -83,25 +83,26 @@ const ProductDetailPage = () => {
                 </div>
 
                 <Stack width="full" maxW="400px">
-                    <Heading size="md">Términos y condiciones</Heading>
                     <AccordionRoot collapsible defaultValue={["info"]}>
                         <AccordionItem key={"envio"} value={"envio"}>
-                            <AccordionItemTrigger>
+                            <AccordionItemTrigger className={style.accordion}>
                                 <Icon fontSize="lg" color="fg.subtle">
                                     <LiaTruckMovingSolid />
                                 </Icon>
                                 Envíos
                             </AccordionItemTrigger>
-                            <AccordionItemContent>Esta es la info de envios</AccordionItemContent>
+                            <AccordionItemContent className={style.accordion}>Borbolet realiza despachos a todo el territorio colombiano, a través de transportadoras aliadas,
+                                que garantizan la seguridad y la cobertura, para que el producto pueda llegar a manos de nuestros clientes</AccordionItemContent>
                         </AccordionItem>
                         <AccordionItem key={"garantia"} value={"garantia"}>
-                            <AccordionItemTrigger>
+                            <AccordionItemTrigger className={style.accordion}>
                                 <Icon fontSize="lg" color="fg.subtle">
                                     <LiaLockSolid />
                                 </Icon>
                                 Garantía
                             </AccordionItemTrigger>
-                            <AccordionItemContent>Esta es la info de garantias</AccordionItemContent>
+                            <AccordionItemContent className={style.accordion}>Borbolet ofrece garantía de 60 días contra defectos de fabricación y ofrece un servicio de
+                                manteninimiento para asegurar que tus accesorios se mantengan hermosos durante años. La garantía no cubre daños por mal uso</AccordionItemContent>
                         </AccordionItem>
                     </AccordionRoot>
                 </Stack>

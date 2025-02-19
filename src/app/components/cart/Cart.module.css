@@ -21,3 +21,15 @@
     width: 6.25rem;
     height: 6.25rem;
 }
+.btnComprar{
+    background-color: #FF1D79;
+    font-size: 1.125rem;
+    margin: 1.25rem;
+}
+.btn{
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+}
+.agg{
+    margin-bottom: 1.25rem
+}

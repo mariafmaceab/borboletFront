@@ -67,3 +67,14 @@
     cursor: pointer;
     box-shadow: .0625rem .0625rem .0625rem #555555;
   }
+
+  @media (max-width: 768px) {
+    .divProcesos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        margin: 0rem 5rem 0rem 5rem;
+      }
+  }

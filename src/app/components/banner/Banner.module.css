@@ -1,0 +1,8 @@
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff1d7742;
+    height: 45px;
+    font-weight: 500;
+}

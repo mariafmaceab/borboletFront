@@ -72,3 +72,49 @@
     align-items: center;
     border-radius: 1.25rem 1.25rem 0rem 0rem;
 }
+@media (max-width: 1200px) {
+    .divEarringsCards{
+        gap: .9375rem;
+    }
+}
+@media (max-width: 930px) {
+    .titleCollection{
+        font-size: 1.75rem;
+        padding: 1.875rem;;
+    }
+    .cards{
+        display: none;
+    }
+    .divEarrings{
+        gap: .625rem;
+    }
+    .banner{
+        width: 12.5rem;
+        height: 1.875rem;
+    }
+    .category{
+        font-size: 1.375rem;
+    }
+}
+@media (max-width: 625px) {
+    .vermas{
+        width: 8.125rem;
+        height: 1.5625rem;
+    }
+    .divButton{
+          justify-content: center;
+          margin: 0rem;
+          padding: 0rem;
+          margin-top: 2.1875rem;
+          margin-bottom: 5.625rem;
+    }
+}
+@media (max-width: 500px) {
+    .titleCollection{
+        font-size: 1.5rem;
+        padding: 1.25rem;
+    }
+    .category{
+        font-size: 1.125rem;
+    }
+}

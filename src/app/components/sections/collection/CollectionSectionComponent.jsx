@@ -41,7 +41,7 @@ const SectionColeccion = () => {
                                         </div>
                                     )
                                 }
-                                return <ProductCardComponent product={earring} key={earring.id}/>
+                                return <ProductCardComponent className={style.cards} product={earring} key={earring.id}/>
                             })
                         }
                     </div>
@@ -69,7 +69,7 @@ const SectionColeccion = () => {
                                         </div>
                                     )
                                 }
-                                return <ProductCardComponent product={necklace} key={necklace.id}/>
+                                return <ProductCardComponent className={style.cards} product={necklace} key={necklace.id}/>
                             })
                         }
                     </div>

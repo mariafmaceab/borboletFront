@@ -35,3 +35,11 @@
     gap: 30px;
     flex-wrap: wrap;
 }
+@media (max-width: 480px) {
+    .sectionCollection{
+        padding: 1.25rem;
+    }
+    .filtersSection{
+        flex-direction: column;
+    }
+}

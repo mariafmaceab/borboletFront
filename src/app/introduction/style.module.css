@@ -2,10 +2,10 @@
     background-color: #EAE8FF;
     font-family: "Poppins", sans-serif;
   }
-  .presentacionBorbolet .frase {
+.frase{
     width: 100%;
-  }
-  .presentacionBorbolet .articlePresentacion {
+}
+.articlePresentacion{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -13,29 +13,35 @@
     gap: 5rem;
     flex-wrap: wrap;
     padding: 0rem 1.25rem 0rem 1.25rem;
-  }
+}
 
-  .divImg{
+.divImg{
     border-radius: .625rem;
     width: 21.875rem;
     height: 28.125rem;
     overflow: hidden;
-  }
-  .imgCreadora {
+}
+.divImgIndigenas{
+  border-radius: .625rem;
+  width: 21.875rem;
+  height: 28.125rem;
+  overflow: hidden;
+}
+.imgCreadora{
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  .presentacionBorbolet .articlePresentacion .txtCreadora {
+}
+.txtCreadora{
     font-size: 1.875rem;
     color: #470063;
-    margin-bottom: 50px;
-  }
-  .presentacionBorbolet .articlePresentacion .divCreadora .flechas {
+    margin-bottom: 3.125rem;
+}
+.flechas{
     text-align: right;
-    margin-right: 50px;
-  }
-  .presentacionBorbolet .articleHistoria {
+    margin-right: 3.125rem;
+}
+.articleHistoria{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -44,83 +50,83 @@
     flex-wrap: wrap;
     padding: 1.25rem;
     padding-top: 5rem;
-  }
-  .imgIndigenas {
+}
+.imgIndigenas{
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  .presentacionBorbolet .articleHistoria .txtCreadora {
+}
+.txtCreadora{
     font-size: 1.875rem;
     color: #FF1D79;
     margin-bottom: 3.125rem;
-  }
-  .presentacionBorbolet .articleHistoria .flechas .imgFlecha {
+}
+.imgFlecha{
     transform: scaleX(-1);
     margin-left: 3.125rem;
     margin-bottom: 3.125rem;
-  }
-  .presentacionBorbolet .articleResultado {
+}
+.articleResultado{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 5rem;
     flex-wrap: wrap;
-    padding: 0px 80px 0px 80px;
-  }
-  .imgModelos {
+    padding: 0rem 5rem 0rem 5rem;
+}
+.imgModelos{
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  .presentacionBorbolet .articleResultado .txtCreadora {
+}
+.txtCreadora{
     font-size: 1.875rem;
     color: #470063;
-    margin-bottom: 50px;
-  }
-  .presentacionBorbolet .presentacionMensaje {
+    margin-bottom: 3.125rem;
+}
+.presentacionMensaje{
     background: rgb(71, 0, 99);
     background: linear-gradient(0deg, rgb(71, 0, 99) 0%, rgb(234, 232, 255) 100%);
     margin-top: 6.25rem;
     padding: 2.5rem;
-  }
-  .presentacionBorbolet .presentacionMensaje .imgpresentacionMensaje {
+}
+.imgpresentacionMensaje{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 4.375rem;
-  }
-  .divPresentacionArete{
+}
+.divPresentacionArete{
     border-radius: 50%;
-    width: 128px;
-    height: 128px;
+    width: 8rem;
+    height: 8rem;
     overflow: hidden;
-  }
+}
 
-  .aretePresentacion{
+.aretePresentacion{
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
 
-  .presentacionBorbolet .presentacionMensaje .pMensaje {
+.pMensaje {
     font-size: 3rem;
     text-align: center;
     color: aliceblue;
     padding: 1.875rem;
-  }
-  .presentacionBorbolet .presentacionMensaje .divbtnComprar {
+}
+.divbtnComprar {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .presentacionBorbolet .presentacionMensaje .divbtnComprar .btnComprar {
+}
+.btnComprar {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 220px;
+    width: 13.75rem;
     height: 2.875rem;
     font-size: 1.125rem;
     background-color: #FF1D79;
@@ -129,5 +135,60 @@
     border-radius: 1.25rem;
     border: 0.125rem solid #FF1D79;
     cursor: pointer;
-    box-shadow: 1px 1px 1px #555555;
+    box-shadow: .0625rem .0625rem .0625rem #555555;
+}
+
+@media (max-width: 1315px) {
+  .divImg{
+    width: 15.625rem;
+    height: 21.875rem;
   }
+  .txtCreadora {
+    font-size: 1.25rem;
+    color: #470063;
+    margin-bottom: 3.125rem;
+  }
+  .articleHistoria {
+    padding: 1.25rem;
+    padding-top: 1.25rem;
+    gap: .625rem;
+  }
+  .articleResultado{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: .9375rem;
+    padding: .625rem;
+  }
+  .pMensaje{
+    font-size: 1.75rem;
+    padding: .9375rem;
+  }
+  .divPresentacionArete{
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+  .imgpresentacionMensaje{
+    gap: .625rem;
+    margin: 0rem;
+    padding: 0rem;
+  }
+  .presentacionMensaje{
+    padding: 1.25rem;
+    padding-bottom: 1.875rem;
+  }
+  .divImgIndigenas{
+    width: 9.375rem;
+    height: 15.625rem;
+}
+}
+
+@media (max-width: 400px) {
+  .divPresentacionArete{
+    width: 4.375rem;
+    height: 4.375rem;
+  }
+  .pMensaje{
+    font-size: 1.125rem;
+    padding: .9375rem;
+  }
+}

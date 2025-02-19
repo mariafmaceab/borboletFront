@@ -1,10 +1,10 @@
 .pageProducts{
-    padding: 40px;
+    padding: 2.5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 9.375rem;
     align-items: flex-start;
-    gap: 30px;
     width: 100%;
 }
 .articleImgProduct{
@@ -14,9 +14,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: .625rem;
 }
 .imgProduct{
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
 }
 .titleProduct{
     font-size: 1.75rem;
@@ -27,10 +30,10 @@
     font-size: 1.5rem;
 }
 .bottomsProducto{
-    margin: 20px 0px 20px 0px;
+    margin: 1.25rem 0px 1.25rem 0px;
 }
 .btnCantidad{
-    width: 60px;
+    width: 40px;
     height: 40px;
     color: #470063;
     border: 0.125rem solid #470063;
@@ -38,21 +41,92 @@
     box-shadow: 2px 2px 2px #555555;
     background-color: rgba(15, 10, 10, 0);
     cursor: pointer;
-    margin-right: 30px;
 }
 .btnCarrito{
-    width: 200px;
-    height: 40px;
+    width: 12.5rem;
+    height: 2.5rem;
     background-color: #FF1D79;
     color: white;
     border-radius: 1.25rem;
     box-shadow: 2px 2px 2px #555555;
     border: 0.125rem solid #FF1D79;
     cursor: pointer;
+    margin-left: 1.875rem;
 }
-.precioProducto{
-    font-size: 1.125rem;
+.descripcionProducto{
+    margin: 1.25rem;
+    margin-top: 2.5rem;
 }
 .descripcionItem{
     list-style-type: disc;
+    font-size: 1.125rem;
+}
+.accordion{
+    font-size: 1.125rem;
+    margin: .625rem;
+    cursor: pointer;
+}
+.inputCantidad{
+    text-align: center;
+    margin: .625rem;
+}
+
+@media (max-width: 1000px) {
+    .pageProducts{
+        padding: 1.25rem;
+        padding-top: 2.5rem;
+        gap: 3.125rem;
+    }
+}
+@media (max-width: 860px) {
+    .btnCarrito{
+        width: 10rem;
+        height: 30px;
+        margin-left: .625rem;
+    }
+    .btnCantidad{
+        width: 1.875rem;
+        height: 1.875rem;
+        margin: 0rem;
+    }
+    .inputCantidad{
+        margin: .3125rem;
+        text-align: center;
+    }
+    .titleProduct{
+        font-size: 1.375rem;
+    }
+    .priceProduct{
+        font-size: 1.25rem;
+    }
+    .descripcionProducto{
+        font-size: 1rem;
+    }
+    .descripcionItem{
+        list-style-type: disc;
+        font-size: 1rem;
+    }
+    .accordion{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 680px) {
+    .pageProducts{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+    }
+}
+@media (max-width: 550px) {
+    .pageProducts{
+        padding: .625rem;
+    }
+    .articleImgProduct{
+        width: 300px;
+        height: 380px;
+        justify-content: baseline;
+    }
+    .imgProduct{
+        object-fit: cover;
+    }
 }

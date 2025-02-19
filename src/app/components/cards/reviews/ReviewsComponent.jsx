@@ -5,7 +5,7 @@ import Image from 'next/image'
 const ReviewsComponent = ({reviewData}) => {
     return (
         <div className={`${style.cardCompleta} ${style.ultima}`}>
-            <img className={style.estrellas} src="./stars.svg" alt="estrellas"/>
+            <Image className={style.estrellas} src="/stars.svg" alt="estrellas" width={152} height={24}/>
             <div className={style.divTestimonios}>
                 <p className={style.textoCardTestimonios}>{reviewData.text}</p>
                 <div className={style.piedeTestimonios}>

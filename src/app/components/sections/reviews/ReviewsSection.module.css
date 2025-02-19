@@ -1,0 +1,65 @@
+.sectionTestimonios {
+    padding: 1.25rem;
+    font-family: "Poppins", sans-serif;
+  }
+ .tituloTestimonios {
+    color: #470063;
+    font-size: 3rem;
+    text-align: center;
+    padding: 3.125rem;
+  }
+  .cardTestimonios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1.25rem;
+    padding: 10px;
+    max-width: 80%;
+    white-space: nowrap;
+    scrollbar-width: none;
+  }
+  .cardCompleta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .divTestimonios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nextArrow, .prevArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .nextArrow {
+    right: 10px;
+  }
+  
+  .prevArrow {
+    left: 10px;
+  }
+
+  @media (max-width: 930px) {
+    .tituloTestimonios{
+        font-size: 1.75rem;
+        padding: 1.875rem;;
+    }
+  }
+  

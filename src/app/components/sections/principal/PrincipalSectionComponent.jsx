@@ -5,11 +5,11 @@ import Link from 'next/link';
 const SectionPrincipal = () => {
     return(
         <section className={style.sectionPrincipal}>
-        <h1>Accesorios con mostacilla</h1>
+        <h1 className={style.title}>Accesorios con mostacilla</h1>
         <p className={style.texto}>Cada pieza es una obra de arte <br />tejida exclusivamente para ti</p>
         <div className={style.buttons}>
             <Link href="#nuestra-coleccion" className={style.btnPrimary}>Explora nuestra colección</Link>
-            <button className={style.btnSecondary}>Personalizamos tu pedido</button>
+            <Link href="/contact" className={style.btnSecondary}>Personalizamos tu pedido</Link>
             <button className={style.btnMovilPrimary}>Ver colección</button>
             <button className={style.btnMovilSecondary}>Personalizar</button>
         </div>

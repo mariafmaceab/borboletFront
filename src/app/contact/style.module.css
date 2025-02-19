@@ -1,0 +1,82 @@
+.sectionContacto{
+    padding: 2.5rem
+}
+.articleContacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .3125rem;
+}
+.tituloContacto {
+    color: #FF1D79;
+    font-size: 3rem;
+}
+.parrafoContacto {
+    color: #470063;
+    font-size: 1.875rem;
+    text-align: center;
+    margin: 1.5625rem;
+}
+.datoContacto {
+    border: .0625rem solid gray;
+    border-radius: .5rem;
+    padding: .4375rem;
+    font-size: 1.125rem;
+    width: 50rem;
+    justify-content: center;
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.primerosDatos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+.dato1{
+    width: 24.375rem;
+}
+.dato2{
+    width: 24.375rem;
+}
+.dato4{
+    height: 6.25rem;
+}
+.dato5{
+    text-align: center;
+    background-color: #470063;
+    color: aliceblue;
+}
+.segundosDatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+@media (max-width: 900px) {
+    .primerosDatos {
+        flex-direction: column;
+    }
+    .datoContacto{
+        width: 25rem;
+    }
+}
+@media (max-width: 460px) {
+    .tituloContacto {
+        font-size: 1.75rem
+    }
+    .parrafoContacto {
+        font-size: 1.125rem;
+        margin-top: .625rem;
+    }
+    .datoContacto{
+        width: 18.4375rem;
+    }
+}

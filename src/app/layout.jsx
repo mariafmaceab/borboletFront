@@ -4,6 +4,7 @@ import "./globals.css";
 import FooterComponent from "@/app/components/footer/FooterComponent";
 import { Provider } from "@/app/components/ui/provider"
 import { CartProvider } from "./context/cartcontext";
+import BannerComponent from "./components/banner/BannerComponent";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
       <body>
         <CartProvider>
           <Provider>
+            <BannerComponent/>
             <HeaderComponent />
             {children}
             <FooterComponent />
