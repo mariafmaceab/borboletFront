@@ -92,7 +92,7 @@ const CartComponent = () => {
             <DrawerBackdrop />
             <DrawerTrigger asChild>
                 <Button className={style.buttonCar} variant="outline" size="md">
-                    <Image src="/Cesta.svg" alt="CarritoDeCompras" width={27} height={27}/>
+                    <Image className={style.imgCar} src="/Cesta.svg" alt="CarritoDeCompras" width={27} height={27}/>
                 </Button>
             </DrawerTrigger>
             <DrawerContent className={style.drawerCar}>

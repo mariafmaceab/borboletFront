@@ -27,7 +27,6 @@
     font-size: 1.125rem;
     width: 100%;
     height: 4.375rem;
-    border-bottom: 0.1875rem solid #470063;
     list-style: none;
 }
 
@@ -79,4 +78,47 @@
 
 .imgproducto {
     width: 100%;
+}
+.burguer{
+    color: #470063;
+}
+.btnBurguer{
+    margin: .625rem;
+}
+.textMovil{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-size: 1rem;
+    color: #470063;
+    margin: .625rem;
+    font-weight: 500;
+    border-bottom: .0625rem solid #c1c1c1;
+    height: 2.8125rem;
+}
+.coleccionMovil{
+    list-style-type: none;
+    font-size: 1rem;
+    gap: .625rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .625rem;
+    border-bottom: .0625rem solid #c1c1c1;
+    height: 2.8125rem;
+}
+.titleMovil{
+    color: rgba(255, 255, 255, 0);
+    height: 2.8125rem;
+}
+.headerM{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: .1875rem solid #470063;
+}
+.logoMovil{
+    width: 6.875rem;
+    position: relative;
+    top: 1.8125rem;
 }

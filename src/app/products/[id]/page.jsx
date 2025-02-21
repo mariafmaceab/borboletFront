@@ -52,7 +52,7 @@ const ProductDetailPage = () => {
     return (
         <section className={style.pageProducts}>
             <article className={style.articleImgProduct}>
-                <Image className={style.imgProduct} src={product?.image || "../LogoFooter.svg"} blurDataURL="https://placehold.co/485x528.WebP" alt={product?.name || "Product"} width={485} height={528} style={{ objectFit: "contain" }} priority loading="eager" />
+                <Image className={style.imgProduct} src={product?.image || "../VarianteLogo.svg"} blurDataURL="https://placehold.co/485x528.WebP" alt={product?.name || "Product"} width={485} height={528} style={{ objectFit: "contain" }} priority loading="eager" />
             </article>
 
             <article className={style.articleDescripcionProducto}>
@@ -101,8 +101,8 @@ const ProductDetailPage = () => {
                                 </Icon>
                                 Garantía
                             </AccordionItemTrigger>
-                            <AccordionItemContent className={style.accordion}>Borbolet ofrece garantía de 60 días contra defectos de fabricación y ofrece un servicio de
-                                manteninimiento para asegurar que tus accesorios se mantengan hermosos durante años. La garantía no cubre daños por mal uso</AccordionItemContent>
+                            <AccordionItemContent className={style.accordion}>Borbolet ofrece garantía en el tejido de 60 días contra defectos de fabricación y ofrece un servicio de
+                                mantenimiento para asegurar que tus accesorios se mantengan hermosos durante años. La garantía no cubre daños por mal uso</AccordionItemContent>
                         </AccordionItem>
                     </AccordionRoot>
                 </Stack>

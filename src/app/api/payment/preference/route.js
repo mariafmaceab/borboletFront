@@ -16,11 +16,11 @@ export async function POST(request) {
                 }
             }),
             "back_urls": {
-                "success": "https://a292-2800-e2-5480-e2c-f45c-763b-ecfe-802e.ngrok-free.app/shipment",
-                "pending": "https://a292-2800-e2-5480-e2c-f45c-763b-ecfe-802e.ngrok-free.app/pending",
-                "failure": "https://a292-2800-e2-5480-e2c-f45c-763b-ecfe-802e.ngrok-free.app/failure"
+                "success": process.env.NEXT_PUBLIC_MP_SUCCESS_URL,
+                "pending": process.env.NEXT_PUBLIC_MP_PENDING_URL,
+                "failure": process.env.NEXT_PUBLIC_MP_FAILURE_URL,
             },
-            "notification_url": "https://a292-2800-e2-5480-e2c-f45c-763b-ecfe-802e.ngrok-free.app/api/payment/webhook",
+            "notification_url": process.env.NEXT_PUBLIC_MP_NOTIFICATION_URL,
         }
 
         const response = await paymentPreference.create({ body: preference });
