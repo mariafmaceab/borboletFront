@@ -10,8 +10,8 @@ const SectionPrincipal = () => {
         <div className={style.buttons}>
             <Link href="#nuestra-coleccion" className={style.btnPrimary}>Explora nuestra colección</Link>
             <Link href="/contact" className={style.btnSecondary}>Personalizamos tu pedido</Link>
-            <button className={style.btnMovilPrimary}>Ver colección</button>
-            <button className={style.btnMovilSecondary}>Personalizar</button>
+            <Link href="#nuestra-coleccion" className={style.btnMovilPrimary}>Ver colección</Link>
+            <Link href="/contact" className={style.btnMovilSecondary}>Personalizar</Link>
         </div>
      </section>
     );
