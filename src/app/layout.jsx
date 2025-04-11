@@ -1,6 +1,6 @@
 import HeaderComponent from "@/app/components/header/HeaderComponent";
+import Head from "next/head";
 import { Poppins } from "next/font/google";
-import "./globals.css";
 import FooterComponent from "@/app/components/footer/FooterComponent";
 import { Provider } from "@/app/components/ui/provider"
 import { CartProvider } from "./context/cartcontext";
@@ -26,14 +26,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <head>
+      <Head>
         <link
           rel="preload"
           as="image"
           href="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/Movil%20(1)%20(1).webp"
           type="image/webp"
         />
-      </head>
+        <link rel="preload" href="/globals.css" as="style" />
+      </Head>
       <body className={poppins.className}>
         <CartProvider>
           <Provider>
