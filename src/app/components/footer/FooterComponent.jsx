@@ -25,7 +25,7 @@ const FooterComponent = () => {
 
                 <article className={style.menuFooter}>
                     <ul className={style.linkList}>
-                        <p className={style.subtitulo}>Menú</p>
+                        <li className={style.subtitulo}>Menú</li>
                         <li className={`${style.list} ${style.inicio}`}><Link className="link" href="#">Inicio</Link></li>
                         <li className={`${style.list} ${style.aretes}`}><Link className="link" href="/products/earrings">Aretes</Link></li>
                         <li className={`${style.list} ${style.collares}`}><Link className="link" href="/products/necklaces">Collares</Link></li>

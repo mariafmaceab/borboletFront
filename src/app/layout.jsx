@@ -1,19 +1,17 @@
 import HeaderComponent from "@/app/components/header/HeaderComponent";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import FooterComponent from "@/app/components/footer/FooterComponent";
 import { Provider } from "@/app/components/ui/provider"
 import { CartProvider } from "./context/cartcontext";
 import BannerComponent from "./components/banner/BannerComponent";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+  weight: ["400", "500", "600"],
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata = {
@@ -27,8 +25,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html suppressHydrationWarning>
-      <body>
+    <html lang="es" suppressHydrationWarning>
+      <body className={poppins.className}>
         <CartProvider>
           <Provider>
             <BannerComponent/>

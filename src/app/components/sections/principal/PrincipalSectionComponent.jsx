@@ -1,6 +1,8 @@
+"use client"
 import React from 'react'
 import style from './PrincipalSection.module.css'
 import Link from 'next/link';
+import Image from "next/image";
 
 const SectionPrincipal = () => {
     return(

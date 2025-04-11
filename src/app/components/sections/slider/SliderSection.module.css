@@ -1,6 +1,5 @@
 .sectionSlider {
     background-color: #470063;
-    font-family: "Poppins", sans-serif;
     padding: 1.25rem;
     overflow: hidden;
     white-space: nowrap;
@@ -8,13 +7,14 @@
   .slideTrack {
     display: flex;
     flex-direction: row;
-    overflow: hidden;
+    overflow-x: hidden;
     animation: 20s slide infinite linear;
     width: 2848px;
   }
   .slide {
     display: flex;
     flex-direction: row;
+    flex-shrink: 0;
   }
   .containerSlide {
     display: flex;
@@ -35,7 +35,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-1424px);
+      transform: translateX(-50%);
     }
   }
 

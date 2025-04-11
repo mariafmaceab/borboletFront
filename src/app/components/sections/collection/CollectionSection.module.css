@@ -46,7 +46,6 @@
   border-radius: 1.25rem;
   box-shadow: 0.25rem 0.25rem 0.25rem #555555;
   border: 0.125rem solid #E3196A;
-  font-family: "Poppins", sans-serif;
   cursor: pointer;
 }
 .divButton{
@@ -68,7 +67,6 @@
     height: 2.0625rem;
     color: #ffffff;
     font-style: italic;
-    justify-content: center;
     align-items: center;
     border-radius: 1.25rem 1.25rem 0rem 0rem;
 }
@@ -80,7 +78,7 @@
 @media (max-width: 930px) {
     .titleCollection{
         font-size: 1.75rem;
-        padding: 1.875rem;;
+        padding: 1.875rem;
     }
     .cards{
         display: none;
