@@ -26,6 +26,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es" suppressHydrationWarning>
+      <head>
+        <link
+          rel="preload"
+          as="image"
+          href="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/Movil%20(1)%20(1).webp"
+          type="image/webp"
+        />
+      </head>
       <body className={poppins.className}>
         <CartProvider>
           <Provider>
