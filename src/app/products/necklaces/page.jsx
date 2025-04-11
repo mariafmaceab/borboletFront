@@ -38,7 +38,7 @@ const Necklaces = () => {
     return (
           <section className={style.sectionCollection}>
               <article className={style.titleNecklace}>
-                  <h2>Collares</h2>
+                  <h1>Collares</h1>
               </article>
               <article className={style.filtersSection}>
                   <p>Filtrar:</p>

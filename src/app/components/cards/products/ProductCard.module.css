@@ -22,8 +22,9 @@
 }
 .tituloProducto{
     display:flex;
-    color:#FF1D79;
+    color:#470063;
     font-size: 1.375rem;
+    font-weight: 500;
     align-items: left;
     justify-content: left;
 }

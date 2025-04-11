@@ -57,7 +57,7 @@ const ProductDetailPage = () => {
 
             <article className={style.articleDescripcionProducto}>
                 <div className={style.titleProduct}>
-                    <h3>{product.name}</h3>
+                    <h1>{product.name}</h1>
                 </div>
 
                 <div className={style.precioProducto}>
@@ -74,6 +74,7 @@ const ProductDetailPage = () => {
                 </div>
 
                 <div className={style.descripcionProducto}>
+                <h2 className={style.detalles}>Detalles del producto:</h2>
                     <ul className={style.listaDescripcionProducto}>
                         {
                             product?.description?.map((item, index) => (
@@ -89,7 +90,7 @@ const ProductDetailPage = () => {
                                 <Icon fontSize="lg" color="fg.subtle">
                                     <LiaTruckMovingSolid />
                                 </Icon>
-                                Envíos
+                                <h2>Envíos</h2>
                             </AccordionItemTrigger>
                             <AccordionItemContent className={style.accordion}>Borbolet realiza despachos a todo el territorio colombiano, a través de transportadoras aliadas,
                                 que garantizan la seguridad y la cobertura, para que el producto pueda llegar a manos de nuestros clientes</AccordionItemContent>
@@ -99,7 +100,7 @@ const ProductDetailPage = () => {
                                 <Icon fontSize="lg" color="fg.subtle">
                                     <LiaLockSolid />
                                 </Icon>
-                                Garantía
+                                <h2>Garantía</h2>
                             </AccordionItemTrigger>
                             <AccordionItemContent className={style.accordion}>Borbolet ofrece garantía en el tejido de 60 días contra defectos de fabricación y ofrece un servicio de
                                 mantenimiento para asegurar que tus accesorios se mantengan hermosos durante años. La garantía no cubre daños por mal uso</AccordionItemContent>

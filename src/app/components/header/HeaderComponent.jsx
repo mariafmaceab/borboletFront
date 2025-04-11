@@ -107,7 +107,7 @@ const NavBar = () => {
                         </div>
 
                         <div className={`${style.logo}  ${style.div}`}>
-                            <li> <Link href="/"><Image src="/Logo.svg" alt="Logo" width={179} height={64} /></Link></li>
+                            <li> <Link href="/"><Image src="/Logo.svg" alt="Logo" title='Logo principal' width={179} height={64} /></Link></li>
                         </div>
 
                         <div className={style.div}>

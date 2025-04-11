@@ -38,7 +38,7 @@ const Earrings = () => {
       return (
             <section className={style.sectionCollection}>
                 <article className={style.titleEarrings}>
-                    <h2>Aretes</h2>
+                    <h1>Aretes</h1>
                 </article>
                 <article className={style.filtersSection}>
                     <p>Filtrar:</p>

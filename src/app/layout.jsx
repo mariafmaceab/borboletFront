@@ -17,8 +17,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Borbolet | Accesorios en mostacilla",
-  description: "",
+  title: "Accesorios en mostacilla | Borbolet",
+  description: "Descubre aretes y collares tejidos a mano con mostacilla checa. Diseños únicos y artesanales que resaltan tu estilo. Compra ahora en Borbolet.",
+  keywords: "Accesorios, mostacilla, aretes, collares, aretes con chaquira, aretes bordados",
+  robots: "index, follow",
+  author: "Maria Fernanda Macea",
+  copyright: "Borbolet",
 };
 
 export default function RootLayout({ children }) {

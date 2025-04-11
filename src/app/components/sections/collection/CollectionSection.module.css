@@ -40,12 +40,12 @@
   justify-content: center;
   align-items: center;
   font-size: 1.125rem;
-  background-color: #FF1D79;
+  background-color: #E3196A;
   color: white;
   padding: 18px;
   border-radius: 1.25rem;
   box-shadow: 0.25rem 0.25rem 0.25rem #555555;
-  border: 0.125rem solid #FF1D79;
+  border: 0.125rem solid #E3196A;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
 }

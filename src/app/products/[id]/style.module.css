@@ -45,13 +45,17 @@
 .btnCarrito{
     width: 12.5rem;
     height: 2.5rem;
-    background-color: #FF1D79;
+    background-color: #E3196A;
     color: white;
     border-radius: 1.25rem;
     box-shadow: 2px 2px 2px #555555;
-    border: 0.125rem solid #FF1D79;
+    border: 0.125rem solid #E3196A;
     cursor: pointer;
     margin-left: 1.875rem;
+}
+.detalles{
+    margin-bottom: .9375rem;
+    font-size: 1.125rem;
 }
 .descripcionProducto{
     margin: 1.25rem;

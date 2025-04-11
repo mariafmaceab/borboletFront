@@ -5,7 +5,7 @@
   }
   .tituloProcesos {
     font-size: 1.875rem;
-    color: #FF1D79;
+    color: #E3196A;
     text-align: center;
     padding-top: 3.75rem;
     padding-bottom: 1.25rem;
@@ -59,11 +59,11 @@
     width: 13.75rem;
     height: 2.875rem;
     font-size: 1.125rem;
-    background-color: #FF1D79;
+    background-color: #E3196A;
     color: white;
     padding: 1.125rem;
     border-radius: 1.25rem;
-    border: 0.125rem solid #FF1D79;
+    border: 0.125rem solid #E3196A;
     cursor: pointer;
     box-shadow: .0625rem .0625rem .0625rem #555555;
   }

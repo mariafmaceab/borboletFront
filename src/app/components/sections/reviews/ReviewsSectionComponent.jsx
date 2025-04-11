@@ -66,12 +66,12 @@ const ReviewsSectionComponent = () => {
             <p className={style.tituloTestimonios}>¿Qué dicen nuestros clientes?</p>
             <div className="slider-container">
                 <Slider {...settings}>
-                    <ReviewsComponent index={1} reviewData={{ username: "Carolina Mena", city: "Medellín", imageLink: "https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/testimonio1.jpeg", text: "Espectacularessss, muchas gracias me encantaron demasiado" }} />
-                    <ReviewsComponent index={2} reviewData={{ username: "Maria", city: "Bogotá", imageLink: "https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/testimonio2.jpg", text: "Acabo de probarme el collar y solo puedo decir, 20/10. Fue mejor de lo que me imagine!! Y los colores que yo queria...🤭 muchas gracias!!" }} />
-                    <ReviewsComponent index={3} reviewData={{ username: "Sofia Marín", city: "Medellín", imageLink: "https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/testimonio5.jpg", text: "Mis aretes han sido lo más admirado de este mundo, gracias por mis Monarcas. No pasa uno desapercibido, eso si es seguro, los amé!!" }} />
-                    <ReviewsComponent index={4} reviewData={{ username: "Carmenza", city: "Medellín", imageLink: "https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/testimonio3.jpg", text: "Estas aretas le dan el toquecito perfecto a mis outfits, hacen una diferencia enorme" }} />
+                    <ReviewsComponent index={1} reviewData={{ username: "Carolina Mena", city: "Medellín", imageLink: "https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/testimonio1.webp", text: "Espectacularessss, muchas gracias me encantaron demasiado" }} />
+                    <ReviewsComponent index={2} reviewData={{ username: "Maria", city: "Bogotá", imageLink: "https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/testimonio2.webp", text: "Acabo de probarme el collar y solo puedo decir, 20/10. Fue mejor de lo que me imagine!! Y los colores que yo queria...🤭 muchas gracias!!" }} />
+                    <ReviewsComponent index={3} reviewData={{ username: "Sofia Marín", city: "Medellín", imageLink: "https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/testimonio5.webp", text: "Mis aretes han sido lo más admirado de este mundo, gracias por mis Monarcas. No pasa uno desapercibido, eso si es seguro, los amé!!" }} />
+                    <ReviewsComponent index={4} reviewData={{ username: "Carmenza", city: "Medellín", imageLink: "https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/testimonio3.webp", text: "Estas aretas le dan el toquecito perfecto a mis outfits, hacen una diferencia enorme" }} />
                 </Slider>
-            </div>
+            </div> 
         </section>
     )
 }

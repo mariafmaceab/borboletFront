@@ -58,7 +58,7 @@
 }
 .txtCreadora{
     font-size: 1.875rem;
-    color: #FF1D79;
+    color: #E3196A;
     margin-bottom: 3.125rem;
 }
 .imgFlecha{
@@ -129,11 +129,11 @@
     width: 13.75rem;
     height: 2.875rem;
     font-size: 1.125rem;
-    background-color: #FF1D79;
+    background-color: #E3196A;
     color: white;
     padding: 18px;
     border-radius: 1.25rem;
-    border: 0.125rem solid #FF1D79;
+    border: 0.125rem solid #E3196A;
     cursor: pointer;
     box-shadow: .0625rem .0625rem .0625rem #555555;
 }
