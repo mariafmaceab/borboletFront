@@ -74,23 +74,24 @@ const ProductDetailPage = () => {
                 </div>
 
                 <div className={style.descripcionProducto}>
-                <h2 className={style.detalles}>Detalles del producto:</h2>
-                    <ul className={style.listaDescripcionProducto}>
-                        {
+                    <h2 className={`${style.detalles} ${style.detalles1}`}>Accesorios tejidos artesanales</h2>
+                    <p className={`${style.detalles} ${style.detalles2}`}>Detalles del producto:</p>
+                        <ul className={style.listaDescripcionProducto}>
+                            {
                             product?.description?.map((item, index) => (
-                                <li className={style.descripcionItem} key={index}>{item}</li>
+                                <h3 key={index}><li className={style.descripcionItem}>{item}</li></h3>
                             ))}
-                    </ul>
+                        </ul>
                 </div>
 
                 <Stack width="full" maxW="400px">
                     <AccordionRoot collapsible defaultValue={["info"]}>
                         <AccordionItem key={"envio"} value={"envio"}>
                             <AccordionItemTrigger className={style.accordion}>
-                                <Icon fontSize="lg" color="fg.subtle">
+                                <Icon fontSize="lg" hjkcolor="fg.subtle">
                                     <LiaTruckMovingSolid />
                                 </Icon>
-                                <h2>Envíos</h2>
+                                <p>Envíos</p>
                             </AccordionItemTrigger>
                             <AccordionItemContent className={style.accordion}>Borbolet realiza despachos a todo el territorio colombiano, a través de transportadoras aliadas,
                                 que garantizan la seguridad y la cobertura, para que el producto pueda llegar a manos de nuestros clientes</AccordionItemContent>
@@ -100,7 +101,7 @@ const ProductDetailPage = () => {
                                 <Icon fontSize="lg" color="fg.subtle">
                                     <LiaLockSolid />
                                 </Icon>
-                                <h2>Garantía</h2>
+                                <p>Garantía</p>
                             </AccordionItemTrigger>
                             <AccordionItemContent className={style.accordion}>Borbolet ofrece garantía en el tejido de 60 días contra defectos de fabricación y ofrece un servicio de
                                 mantenimiento para asegurar que tus accesorios se mantengan hermosos durante años. La garantía no cubre daños por mal uso</AccordionItemContent>

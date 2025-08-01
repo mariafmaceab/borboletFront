@@ -38,7 +38,8 @@ const Necklaces = () => {
     return (
           <section className={style.sectionCollection}>
               <article className={style.titleNecklace}>
-                  <h1>Collares</h1>
+                  <h1>Collares en mostacilla para mujer</h1>
+                  <h2 className={style.subtitleNecklace}>Collares artesanales indigenas hechos en Colombia</h2>
               </article>
               <article className={style.filtersSection}>
                   <p>Filtrar:</p>

@@ -3,7 +3,7 @@ import style from "./Banner.module.css"
 
 const BannerComponent = () => {
     return (
-        <div className={style.banner}>¡ Envíos gratis en Colombia !</div>
+        <div className={style.banner}>¡ Envíos gratis !</div>
     )
   }
   

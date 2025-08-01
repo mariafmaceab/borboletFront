@@ -23,6 +23,23 @@ const BuySection = () => {
                     </div>
                 </article>
             </article>
+
+                <article className={style.articleEnvio}>
+                    <div className={style.divEnvio}>
+                        <h2>Accesorios para mujer en Colombia</h2>
+                        <p> - Envios GRATIS en TODA Colombia:</p>
+                    </div>
+                    <div className={style.divEnvio2}>
+                        <h3 className={`${style.h3envio} ${style.h3envio1}`}><a href={"/products/earrings"}>Aretes en Bogota</a></h3>
+                        <p>Envío rápido de aretes con mostacilla a Bogotá. Compra online y recíbelos en tu casa sin costo adicional.</p>
+
+                        <h3 className={`${style.h3envio} ${style.h3envio2}`}><a href={"/products/earrings"}>Aretes en Medellin</a></h3>
+                        <p>Somos una tienda de accesorios ubicada en Medellín. Diseños artesanales y modernos, perfectos para ti.</p>
+
+                        <h3 className={`${style.h3envio} ${style.h3envio3}`}><a href={"/products/earrings"}>Aretes en Colombia</a></h3>
+                        <p>Enviamos aretes artesanales a todo el país. Compra segura, envío gratis y atención personalizada.</p>
+                    </div>                  
+                </article>
          </section>
     )
 }

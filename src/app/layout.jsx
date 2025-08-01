@@ -15,9 +15,9 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Accesorios en mostacilla | Borbolet",
-  description: "Descubre aretes y collares tejidos a mano con mostacilla checa. Diseños únicos y artesanales que resaltan tu estilo. Compra ahora en Borbolet.",
-  keywords: "Accesorios, mostacilla, aretes, collares, aretes con chaquira, aretes bordados",
+  title: "Bisuteria en Colombia | Borbolet",
+  description: "Descubre aretas y collares para mujer tejidos a mano con mostacilla checa. Diseños únicos y artesanales que resaltan tu estilo. Compra ahora en Borbolet.",
+  keywords: "Accesorios, mostacilla, aretas, collares, aretes con chaquira, aretes bordados",
   robots: "index, follow",
   author: "Maria Fernanda Macea",
   copyright: "Borbolet",
@@ -27,6 +27,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es" suppressHydrationWarning>
       <Head>
+        <meta name="author" content="Maria Fernanda Macéa" />
+        <meta name="publisher" content="Borbolet" />
+        <meta name="copyright" content="Borbolet" />
         <link
           rel="preload"
           as="image"
@@ -34,6 +37,7 @@ export default function RootLayout({ children }) {
           type="image/webp"
         />
         <link rel="preload" href="/globals.css" as="style" />
+        <link rel="canonical" href="https://borbolet.com.co/" />
       </Head>
       <body className={poppins.className}>
         <CartProvider>

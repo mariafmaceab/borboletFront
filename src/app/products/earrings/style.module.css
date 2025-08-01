@@ -8,6 +8,15 @@
     color: #E3196A;
     padding: .625rem 3.125rem .625rem 0rem;
 }
+.subtitleEarrings{
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+.subtitleEarrings2{
+    font-weight: 300;
+    font-size: 1.125rem;
+    padding-bottom: 2.1875rem;
+}
 .filtersSection{
     display: flex;
     flex-direction: row;

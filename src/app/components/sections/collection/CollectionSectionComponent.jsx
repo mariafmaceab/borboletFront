@@ -35,7 +35,7 @@ const SectionColeccion = () => {
                                     return (
                                         <div key={earring.id + "div"}>
                                             <div className={style.containBanner}>
-                                                <p className={style.banner}>Las más vendidas</p>
+                                                <h3 className={style.banner}>Las más vendidas</h3>
                                             </div>
                                             <ProductCardComponent product={earring} key={earring.id}/>
                                         </div>
@@ -54,7 +54,7 @@ const SectionColeccion = () => {
             <article className={style.earrings}>
                 <div className={style.divEarrings}>
                     <div className={style.divEarringsTxt}>
-                        <h2 className={style.category}>Collares</h2>
+                        <h2 className={style.category}>Collares para mujer</h2>
                     </div>
                     <div className={style.divEarringsCards}>
                         {
@@ -63,7 +63,7 @@ const SectionColeccion = () => {
                                     return (
                                         <div key={necklace.id + "div"}>
                                             <div className={style.containBanner}>
-                                                <p className={style.banner}>Último lanzamiento</p>
+                                                <h3 className={style.banner}>Último lanzamiento</h3>
                                             </div>
                                             <ProductCardComponent product={necklace} key={necklace.id}/>
                                         </div>

@@ -35,6 +35,11 @@
     gap: 30px;
     flex-wrap: wrap;
 }
+.subtitleNecklace{
+    font-weight: 300;
+    font-size: 1.125rem;
+    color: #363636;
+}
 @media (max-width: 480px) {
     .sectionCollection{
         padding: 1.25rem;

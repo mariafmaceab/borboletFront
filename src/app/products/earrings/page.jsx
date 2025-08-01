@@ -37,8 +37,10 @@ const Earrings = () => {
 
       return (
             <section className={style.sectionCollection}>
-                <article className={style.titleEarrings}>
-                    <h1>Aretes</h1>
+                <article>
+                    <h1 className={style.titleEarrings}>Aretes en Colombia</h1>
+                    <h2 className={style.subtitleEarrings}>Aretes artesanales colombianos</h2>
+                    <h3 className={style.subtitleEarrings2}>Aretas de mariposas, aves y flores en mostacilla checa</h3>
                 </article>
                 <article className={style.filtersSection}>
                     <p>Filtrar:</p>
