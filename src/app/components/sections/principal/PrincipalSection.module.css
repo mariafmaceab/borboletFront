@@ -1,5 +1,5 @@
 .sectionPrincipal {
-  background-image: url("https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/fotoPrincipal%20(1).webp");
+    background-image: url("https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/fotoPrincipal%20(1).webp");
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
@@ -176,7 +176,7 @@
 
 @media (max-width: 480px) {
   .sectionPrincipal{
-    background-image: url("https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/Movil%20(1)%20(1).webp");
+    background-image: url("../../../../../public/fotoPrincipalMovil.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

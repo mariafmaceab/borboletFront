@@ -32,9 +32,8 @@ export default function RootLayout({ children }) {
         <meta name="copyright" content="Borbolet" />
         <link
           rel="preload"
+          href="/fotoPrincipalMovil.webp"
           as="image"
-          href="https://pub-973570666b3f4d6da48e4aafb394e236.r2.dev/Movil%20(1)%20(1).webp"
-          type="image/webp"
         />
         <link rel="preload" href="/globals.css" as="style" />
         <link rel="canonical" href="https://borbolet.com.co/" />
