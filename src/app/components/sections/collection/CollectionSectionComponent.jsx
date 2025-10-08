@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import style from './CollectionSection.module.css'
 import ProductCardComponent from '@/app/components/cards/products/ProductCardComponent'
 import supabase from '@/app/database/supabase'
@@ -9,6 +9,23 @@ const SectionColeccion = () => {
 
     const [earrings, setEarrings] = useState([])
     const [necklaces, setNecklaces] = useState([])
+    const [isMuted, setIsMuted] = useState(true)
+    const iframeRef = useRef(null)
+
+    const toggleMute = () => {
+        const iframe = iframeRef.current
+        if (!iframe) return
+        // Enviamos comando a YouTube para activar/desactivar sonido
+        iframe.contentWindow.postMessage(
+            JSON.stringify({
+                event: "command",
+                func: isMuted ? "unMute" : "mute",
+                args: [],
+            }),
+            "*"
+        )
+        setIsMuted(!isMuted)
+    }
 
     useEffect(() => {
         const fetchData = async() => {
@@ -23,6 +40,51 @@ const SectionColeccion = () => {
     return(
         <section className={style.sectionCollection}>
             <p className={style.titleCollection} id="nuestra-coleccion">Nuestra colección</p>
+
+            <section className={style.sectionVideos}>
+                <div className={style.videoYoutube}>
+                <iframe 
+                    ref={iframeRef}
+                    src="https://www.youtube.com/embed/bLyXQ_lgvcg?autoplay=1&mute=1&controls=0&loop=1&playlist=bLyXQ_lgvcg&enablejsapi=1"
+                    title="Collar de flores" 
+                    loading="lazy" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    allowFullScreen>
+                </iframe>
+
+                {/* Botón para activar/desactivar sonido */}
+                <button
+                    onClick={toggleMute}
+                    style={{
+                        position: "absolute",
+                        bottom: "12px",
+                        right: "12px",
+                        background: "rgba(0,0,0,0.6)",
+                        color: "white",
+                        border: "none",
+                        borderRadius: "50%",
+                        width: "40px",
+                        height: "40px",
+                        cursor: "pointer",
+                        fontSize: "18px"
+                    }}
+                >
+                    {isMuted ? "🔇" : "🔊"}
+                </button>
+            </div>
+            <div className={style.videoYoutube}>
+                <iframe 
+                    src="https://www.youtube.com/embed/tNn1K3nXl50?autoplay=1&mute=1&controls=0&loop=1&playlist=tNn1K3nXl50"
+                    title="Collar de flores" 
+                    loading="lazy" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    allowFullScreen>
+                </iframe>
+            </div>
+            </section>
+
             <article className={style.earrings}>
                 <div className={style.divEarrings}>
                     <div className={style.divEarringsTxt}>

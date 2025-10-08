@@ -13,7 +13,7 @@ const ContactPage = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const message = `Este es mi correo electrónico: ${formData.email}. Quisiera recibir más información sobre...`
+        const message = `Hola, vi la web. Este es mi correo electrónico: ${formData.email}. Quisiera recibir más información sobre...`
         const encodedMessage = encodeURIComponent(
             message + formData.comment
         );

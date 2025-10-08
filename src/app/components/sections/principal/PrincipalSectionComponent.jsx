@@ -16,6 +16,7 @@ const SectionPrincipal = () => {
             <Link href="/contact" className={style.btnMovilSecondary}>Personalizar</Link>
         </div>
      </section>
+     
     );
 }
 

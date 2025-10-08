@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic";
-
+import style from "./page.module.css";
 import PrincipalSectionComponent from "@/app/components/sections/principal/PrincipalSectionComponent";
 
 const CollectionSectionComponent = dynamic(() =>
@@ -27,6 +27,19 @@ export default function Home() {
       <SliderSectionComponent/>
       <ReviewsSectionComponent/>
       <BuySectionComponent/>
+      {/* Botón flotante de WhatsApp */}
+      <a
+          href="https://wa.me/573245167082?text=Hola%2C%20vi%20la%20web%20y%20estoy%20interesad%40%20en%20adquirir%20accesorios%20Borbolet"
+          className={style.whatsappFloat}
+          target="_blank"
+          rel="noopener noreferrer"
+      >
+      <img
+          src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+          alt="WhatsApp"
+          className={style.whatsappIcon}
+      />
+      </a>
     </main>
   );
 }
