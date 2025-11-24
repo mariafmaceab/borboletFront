@@ -37,6 +37,18 @@ export default function RootLayout({ children }) {
         />
         <link rel="preload" href="/globals.css" as="style" />
         <link rel="canonical" href="https://borbolet.com.co/" />
+        {/* Google tag (gtag.js) */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16711283100"></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'AW-16711283100');
+              `,
+            }}
+          />
       </Head>
       <body className={poppins.className}>
         <CartProvider>
