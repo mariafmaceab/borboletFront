@@ -5,6 +5,7 @@ import FooterComponent from "@/app/components/footer/FooterComponent";
 import { Provider } from "@/app/components/ui/provider"
 import { CartProvider } from "./context/cartcontext";
 import BannerComponent from "./components/banner/BannerComponent";
+import Script from "next/script";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -38,17 +39,15 @@ export default function RootLayout({ children }) {
         <link rel="preload" href="/globals.css" as="style" />
         <link rel="canonical" href="https://borbolet.com.co/" />
         {/* Google tag (gtag.js) */}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16711283100"></script>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
+          <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16711283100" />
+          <Script id="gtag-init" strategy="afterInteractive">
+            {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', 'AW-16711283100');
-              `,
-            }}
-          />
+            `}
+          </Script>
       </Head>
       <body className={poppins.className}>
         <CartProvider>
