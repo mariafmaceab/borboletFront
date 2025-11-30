@@ -1,5 +1,4 @@
 import HeaderComponent from "@/app/components/header/HeaderComponent";
-import Head from "next/head";
 import { Poppins } from "next/font/google";
 import FooterComponent from "@/app/components/footer/FooterComponent";
 import { Provider } from "@/app/components/ui/provider"
@@ -21,34 +20,13 @@ export const metadata = {
   keywords: "Accesorios, mostacilla, aretas, collares, aretes con chaquira, aretes bordados",
   robots: "index, follow",
   author: "Maria Fernanda Macea",
+  publisher: "Borbolet",
   copyright: "Borbolet",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <Head>
-        <meta name="author" content="Maria Fernanda Macéa" />
-        <meta name="publisher" content="Borbolet" />
-        <meta name="copyright" content="Borbolet" />
-        <link
-          rel="preload"
-          href="/fotoPrincipalMovil.webp"
-          as="image"
-        />
-        <link rel="preload" href="/globals.css" as="style" />
-        <link rel="canonical" href="https://borbolet.com.co/" />
-        {/* Google tag (gtag.js) */}
-          <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16711283100" />
-          <Script id="gtag-init" strategy="afterInteractive">
-            {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'AW-16711283100');
-            `}
-          </Script>
-      </Head>
       <body className={poppins.className}>
         <CartProvider>
           <Provider>
@@ -58,6 +36,16 @@ export default function RootLayout({ children }) {
             <FooterComponent />
           </Provider>
         </CartProvider>
+         {/* Google tag (gtag.js) */}
+          <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16711283100" />
+          <Script id="gtag-init" strategy="afterInteractive">
+            {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'AW-16711283100');
+            `}
+          </Script>
       </body>
     </html>
   );
