@@ -9,7 +9,7 @@
     color: #E3196A;
     padding: .625rem 3.125rem .625rem 0rem;
     justify-content: space-between;
-    align-items:start;
+    align-items:flex-start;
     flex-direction: row;
     margin-bottom: 3.125rem;
 }
