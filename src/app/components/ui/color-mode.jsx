@@ -6,9 +6,22 @@ import { ThemeProvider, useTheme } from 'next-themes'
 import * as React from 'react'
 import { LuSun } from 'react-icons/lu'
 
-export function ColorModeProvider(props) {
+export function ColorModeProvider({children, ...props}) {
+
+  const [mounted, setMounted] = React.useState(false)
+
+  React.useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
+
   return (
-    <ThemeProvider enableSystem={false} attribute='class' disableTransitionOnChange {...props} />
+    <ThemeProvider enableSystem={false} attribute='class' disableTransitionOnChange {...props}>
+      {children}
+    </ThemeProvider>
   )
 }
 
@@ -26,11 +39,15 @@ export function useColorMode() {
 
 export function useColorModeValue(light, dark) {
   const { colorMode } = useColorMode()
+  if (!colorMode) return light
   return colorMode === 'dark' ? dark : light
 }
 
 export function ColorModeIcon() {
   const { colorMode } = useColorMode()
+
+  if (!colorMode) return null
+
   return colorMode === 'dark' ? <LuMoon /> : <LuSun />
 }
 
