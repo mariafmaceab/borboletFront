@@ -5,6 +5,8 @@ import { Provider } from "@/app/components/ui/provider"
 import { CartProvider } from "./context/cartcontext";
 import BannerComponent from "./components/banner/BannerComponent";
 import Script from "next/script";
+import MetaPixelPageView from "./meta/MetaPixelPageView";
+import MetaPixel from "./components/meta/MetaPixel";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -28,6 +30,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es" suppressHydrationWarning>
       <body className={poppins.className}>
+        <MetaPixel />
+        <MetaPixelPageView />
         <CartProvider>
           <Provider>
             <BannerComponent/>
